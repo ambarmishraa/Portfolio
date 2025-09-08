@@ -12,7 +12,7 @@ html {
   color: #fff;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth; 
-   background-color: var(--primary-color); 
+   /* background-color: var(--primary-color);  */
 }
 
 /* Default Background Colour */
@@ -92,7 +92,7 @@ h2 {
 .project-wrapper,
 .socials-wrapper {
   max-width: 1000px;
-  margin: 100px auto;
+  margin: 50px auto;
   margin-top: 0;
   padding: 20px;
 }
@@ -202,6 +202,7 @@ h2 {
 
 @media screen and (max-width: 768px) {
   .hero h1 {
+    margin:20px;
     font-size: 2rem;
   }
 
@@ -215,7 +216,56 @@ h2 {
   }
 
   .projects ul li {
+    display: flex;
+    justify-content: center;
     width: 100%;
+  }
+
+  .project-wrapper{
+    display: block !important;
+  }
+
+  .stepper-box{
+    width: unset;
+  }
+
+  .stepper-line{
+    display: none;
+  }
+
+  .stepper-step{
+    display: block !important;
+  }
+
+  .ol-wrapper{
+    margin-top: 15px;
+    width: 100% !important;
+  }
+
+  .cs-card{
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .stepper-box{
+    width:unset !important;
+  }
+
+  .about-wrapper .skills ul li {
+    height: max-content;
+  }
+
+  .footer-wrapper{
+    margin: 0 50px;
+  }
+  .header-wrapper{
+    margin-bottom:45px;
+  }
+
+  .stepper-responsive{
+    display: flex;
+    
   }
 }
 
@@ -884,4 +934,15 @@ h2 {
 
 .cs-button b:hover{
   background-color: var(--secondary-color);
+}
+
+.skills-p{
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.footer-p{
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
 }

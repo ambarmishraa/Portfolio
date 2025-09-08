@@ -17,15 +17,15 @@
                 <h3 class="portfolio-h">🔥 Portfolio</h3>
             </button>
             <nav>
-                <a href="#contact">
-                    <button>CONTACT ME</button>
-                </a>
+                <!-- <a href="#education"> -->
+                <button onclick="location.href='#education'">CONTACT ME</button>
+                <!-- </a> -->
             </nav>
         </div>
     </header>
 
     <!-- HERO -->
-    <div class="hero">
+    <div class="hero" style="background-color: transparent;">
         <div>
             <img class="profile-img" src="./assets/Profile_Photo.jpg" />
         </div>
@@ -34,11 +34,12 @@
     </div>
 
     <!-- Experience / Work History -->
-    <div class="skills">
+    <div id="experience" class="skills" style="background-color: black;">
         <div class="project-wrapper">
             <h2>Experience / Work History</h2>
             <div class="stepper-box">
                 <div class="stepper-step stepper-completed">
+                    <!-- <div class="stepper-responsive"> -->
                     <div class="stepper-circle">
                         <svg viewBox="0 0 16 16" class="bi bi-check-lg" fill="currentColor" height="16" width="16"
                             xmlns="http://www.w3.org/2000/svg">
@@ -53,8 +54,9 @@
                         <div class="stepper-status">Completed</div>
                         <div class="stepper-status stepper-job">Full Time</div>
                         <div class="stepper-time">Aug 2024 - Jan 2025</div>
+                        <!-- </div> -->
                     </div>
-                    <div style="width: 50%;">
+                    <div style="width: 50%;" class="ol-wrapper">
                         <ol type="1" style="margin:0">
                             <li class="desc-work">Completed a 6-month full-time role as a Software
                                 Developer Trainee,
@@ -78,6 +80,7 @@
                 </div>
 
                 <div class="stepper-step stepper-completed">
+                    <!-- <div class="stepper-responsive"> -->
                     <div class="stepper-circle">
                         <svg viewBox="0 0 16 16" class="bi bi-check-lg" fill="currentColor" height="16" width="16"
                             xmlns="http://www.w3.org/2000/svg">
@@ -92,8 +95,10 @@
                         <div class="stepper-status">Completed</div>
                         <div class="stepper-status stepper-job">Full Time</div>
                         <div class="stepper-time">Feb 2024 - Aug 2024</div>
+                        <!-- </div> -->
                     </div>
-                    <div style="width: 50%;">
+
+                    <div style="width: 50%;" class="ol-wrapper">
                         <ol style="margin:0" type="1">
                             <li class="desc-work">Worked for 6 months as a Full Stack Developer
                                 using Angular, Firebase, and
@@ -114,6 +119,7 @@
                 </div>
 
                 <div class="stepper-step stepper-completed">
+                    <!-- <div class="stepper-responsive"> -->
                     <div class="stepper-circle">
                         <svg viewBox="0 0 16 16" class="bi bi-check-lg" fill="currentColor" height="16" width="16"
                             xmlns="http://www.w3.org/2000/svg">
@@ -128,8 +134,10 @@
                         <div class="stepper-status">Completed</div>
                         <div class="stepper-status stepper-job">Internship</div>
                         <div class="stepper-time">June 2023 - Aug 2023</div>
+                        <!-- </div> -->
                     </div>
-                    <div style="width: 50%;">
+
+                    <div style="width: 50%;" class="ol-wrapper">
                         <ol style="margin:0" type="1">
                             <li class="desc-work">Contributed during a 2-month internship to the
                                 official Prayagraj Smart City
@@ -194,13 +202,13 @@
         </div>
     </div>
 
-
     <!-- Education -->
-    <div class="skills">
+    <div id="education" class="skills" style="background-color: black;">
         <div class="project-wrapper" style="display: flex; justify-content: space-between; align-items: center;">
             <h2>Education</h2>
             <div class="stepper-box" style="width: 40%;">
                 <div class="stepper-step stepper-completed">
+                    <!-- <div class="stepper-responsive"> -->
                     <div class="stepper-circle">
                         <svg viewBox="0 0 16 16" class="bi bi-check-lg" fill="currentColor" height="16" width="16"
                             xmlns="http://www.w3.org/2000/svg">
@@ -217,11 +225,14 @@
                         <div class="stepper-status">Completed</div>
                         <div class="stepper-status stepper-job">Full Time</div>
                         <div class="stepper-time">2020 - 2024</div>
+                        <!-- </div> -->
                     </div>
+
 
                 </div>
 
                 <div class="stepper-step stepper-completed">
+                    <!-- <div class="stepper-responsive"> -->
                     <div class="stepper-circle">
                         <svg viewBox="0 0 16 16" class="bi bi-check-lg" fill="currentColor" height="16" width="16"
                             xmlns="http://www.w3.org/2000/svg">
@@ -237,10 +248,13 @@
                         <div class="stepper-status">Completed</div>
                         <div class="stepper-status stepper-job">Full Time</div>
                         <div class="stepper-time">2018 - 2020</div>
+                        <!-- </div> -->
                     </div>
+
                 </div>
 
                 <div class="stepper-step stepper-completed">
+                    <!-- <div class="stepper-responsive"> -->
                     <div class="stepper-circle">
                         <svg viewBox="0 0 16 16" class="bi bi-check-lg" fill="currentColor" height="16" width="16"
                             xmlns="http://www.w3.org/2000/svg">
@@ -256,8 +270,8 @@
                         <div class="stepper-status">Completed</div>
                         <div class="stepper-status stepper-job">Full Time</div>
                         <div class="stepper-time">2016 - 2018</div>
+                        <!-- </div> -->
                     </div>
-
                 </div>
 
                 <!-- <div class="stepper-step stepper-active">
@@ -381,7 +395,11 @@
 
                             <!-- Youtube -->
                             <a target="_blank" href="https://www.youtube.com/@DebugWithToxic">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(0,0,0,1)"><path d="M12.2439 4C12.778 4.00294 14.1143 4.01586 15.5341 4.07273L16.0375 4.09468C17.467 4.16236 18.8953 4.27798 19.6037 4.4755C20.5486 4.74095 21.2913 5.5155 21.5423 6.49732C21.942 8.05641 21.992 11.0994 21.9982 11.8358L21.9991 11.9884L21.9991 11.9991C21.9991 11.9991 21.9991 12.0028 21.9991 12.0099L21.9982 12.1625C21.992 12.8989 21.942 15.9419 21.5423 17.501C21.2878 18.4864 20.5451 19.261 19.6037 19.5228C18.8953 19.7203 17.467 19.8359 16.0375 19.9036L15.5341 19.9255C14.1143 19.9824 12.778 19.9953 12.2439 19.9983L12.0095 19.9991L11.9991 19.9991C11.9991 19.9991 11.9956 19.9991 11.9887 19.9991L11.7545 19.9983C10.6241 19.9921 5.89772 19.941 4.39451 19.5228C3.4496 19.2573 2.70692 18.4828 2.45587 17.501C2.0562 15.9419 2.00624 12.8989 2 12.1625V11.8358C2.00624 11.0994 2.0562 8.05641 2.45587 6.49732C2.7104 5.51186 3.45308 4.73732 4.39451 4.4755C5.89772 4.05723 10.6241 4.00622 11.7545 4H12.2439ZM9.99911 8.49914V15.4991L15.9991 11.9991L9.99911 8.49914Z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(0,0,0,1)">
+                                    <path
+                                        d="M12.2439 4C12.778 4.00294 14.1143 4.01586 15.5341 4.07273L16.0375 4.09468C17.467 4.16236 18.8953 4.27798 19.6037 4.4755C20.5486 4.74095 21.2913 5.5155 21.5423 6.49732C21.942 8.05641 21.992 11.0994 21.9982 11.8358L21.9991 11.9884L21.9991 11.9991C21.9991 11.9991 21.9991 12.0028 21.9991 12.0099L21.9982 12.1625C21.992 12.8989 21.942 15.9419 21.5423 17.501C21.2878 18.4864 20.5451 19.261 19.6037 19.5228C18.8953 19.7203 17.467 19.8359 16.0375 19.9036L15.5341 19.9255C14.1143 19.9824 12.778 19.9953 12.2439 19.9983L12.0095 19.9991L11.9991 19.9991C11.9991 19.9991 11.9956 19.9991 11.9887 19.9991L11.7545 19.9983C10.6241 19.9921 5.89772 19.941 4.39451 19.5228C3.4496 19.2573 2.70692 18.4828 2.45587 17.501C2.0562 15.9419 2.00624 12.8989 2 12.1625V11.8358C2.00624 11.0994 2.0562 8.05641 2.45587 6.49732C2.7104 5.51186 3.45308 4.73732 4.39451 4.4755C5.89772 4.05723 10.6241 4.00622 11.7545 4H12.2439ZM9.99911 8.49914V15.4991L15.9991 11.9991L9.99911 8.49914Z">
+                                    </path>
+                                </svg>
                             </a>
 
                             <!-- Instagram -->
@@ -395,7 +413,10 @@
                             </a>
 
                         </div>
-                        <button class="cs-button"><b>Resume</b></button>
+                        <a href="https://drive.google.com/file/d/13btn58yWUS6-7P_vyAo1Rf0s41g9SRVr/view?usp=sharing"
+                            target="_blank">
+                            <button class="cs-button"><b>Resume</b></button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -404,10 +425,406 @@
 
     </div>
 
+    <!-- Skills -->
+    <div id="skills" class="skills">
+        <div class="project-wrapper">
+            <h2>Skills</h2>
+            <!-- Frontend Wrapper -->
+            <div>
+                <h3 style="color:white">Frontend Languages</h3>
+                <ul style="list-style-type: none;">
+                    <li>
+                        <div class="m2">
+                            <div class="logo">
+                                <div class="logo-wrapper">
+                                    <img src="./assets/skills/Frontend/html.png" alt="html-icon" />
+                                </div>
+                                <div style="display: flex; justify-content: center; align-items: center;">
+                                    <p class="skills-p">Html</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
 
+                    <li>
+                        <div class="m2">
+                            <div class="logo">
+                                <div class="logo-wrapper">
+                                    <img src="./assets/skills/Frontend/css.png" alt="css-icon" />
+                                </div>
+                                <div style="display: flex; justify-content: center; align-items: center;">
+                                    <p class="skills-p">Css</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="m2">
+                            <div class="logo">
+                                <div class="logo-wrapper">
+                                    <img src="./assets/skills/Frontend/js.png" alt="js-icon" />
+                                </div>
+                                <div style="display: flex; justify-content: center; align-items: center;">
+                                    <p class="skills-p">JavaScript</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="m2">
+                            <div class="logo">
+                                <div class="logo-wrapper">
+                                    <img src="./assets/skills/Frontend/typescript.png" alt="js-icon" />
+                                </div>
+                                <div style="display: flex; justify-content: center; align-items: center;">
+                                    <p class="skills-p">TypeScript</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="m2">
+                            <div class="logo">
+                                <div class="logo-wrapper">
+                                    <img src="./assets/skills/Frontend/jquery.png" alt="js-icon" />
+                                </div>
+                                <div style="display: flex; justify-content: center; align-items: center; ">
+                                    <p class="skills-p">Jquery</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <h3 style="color:white">Frontend Frameworks/Libraries</h3>
+                <ul style="list-style-type: none;">
+                    <li>
+                        <div class="m2">
+                            <div class="logo">
+                                <div class="logo-wrapper">
+                                    <img src="./assets/skills/Frontend/angular.png" alt="html-icon" />
+                                </div>
+                                <div style="display: flex; justify-content: center; align-items: center;">
+                                    <p class="skills-p">Angular</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="m2">
+                            <div class="logo">
+                                <div class="logo-wrapper">
+                                    <img src="./assets/skills/Frontend/react.png" alt="css-icon" />
+                                </div>
+                                <div style="display: flex; justify-content: center; align-items: center;">
+                                    <p class="skills-p">React Js</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="m2">
+                            <div class="logo">
+                                <div class="logo-wrapper">
+                                    <img src="./assets/skills/Frontend/nextjs.png" alt="js-icon" />
+                                </div>
+                                <div style="display: flex; justify-content: center; align-items: center;">
+                                    <p class="skills-p">Next Js</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- Mobile Wrapper -->
+            <div>
+                <h3 style="color:white">Mobile Development</h3>
+                <ul style="list-style-type: none;">
+                    <li>
+                        <div class="m2">
+                            <div class="logo">
+                                <div class="logo-wrapper">
+                                    <img src="./assets/skills/Mobile/flutter.png" alt="html-icon" />
+                                </div>
+                                <div style="display: flex; justify-content: center; align-items: center;">
+                                    <p class="skills-p">Flutter</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="m2">
+                            <div class="logo">
+                                <div class="logo-wrapper">
+                                    <img src="./assets/skills/Mobile/react.png" alt="css-icon" />
+                                </div>
+                                <div style="display: flex; justify-content: center; align-items: center;">
+                                    <p class="skills-p">React Native</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="m2">
+                            <div class="logo">
+                                <div class="logo-wrapper">
+                                    <img src="./assets/skills/Mobile/ionic.png" alt="css-icon" />
+                                </div>
+                                <div style="display: flex; justify-content: center; align-items: center;">
+                                    <p class="skills-p">Ionic</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- Devops/Tools Wrapper -->
+            <div>
+                <h3 style="color:white">DevOps & Tools</h3>
+                <ul style="list-style-type: none;">
+                    <li>
+                        <div class="m2">
+                            <div class="logo">
+                                <div class="logo-wrapper">
+                                    <img src="./assets/skills/Devops/docker.png" alt="html-icon" />
+                                </div>
+                                <div style="display: flex; justify-content: center; align-items: center;">
+                                    <p class="skills-p">Docker</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="m2">
+                            <div class="logo">
+                                <div class="logo-wrapper">
+                                    <img src="./assets/skills/Devops/postman.png" alt="css-icon" />
+                                </div>
+                                <div style="display: flex; justify-content: center; align-items: center;">
+                                    <p class="skills-p">Potsman</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="m2">
+                            <div class="logo">
+                                <div class="logo-wrapper">
+                                    <img src="./assets/skills/Devops/github.png" alt="css-icon" />
+                                </div>
+                                <div style="display: flex; justify-content: center; align-items: center;">
+                                    <p class="skills-p">GitHub</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- Backend Wrapper -->
+            <div>
+                <h3 style="color:white">Backend Languages</h3>
+                <ul style="list-style-type: none;">
+                    <li>
+                        <div class="m2">
+                            <div class="logo">
+                                <div class="logo-wrapper">
+                                    <img src="./assets/skills/Backend/php.png" alt="html-icon" />
+                                </div>
+                                <div style="display: flex; justify-content: center; align-items: center;">
+                                    <p class="skills-p">PHP</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="m2">
+                            <div class="logo">
+                                <div class="logo-wrapper">
+                                    <img src="./assets/skills/Backend/c-.png" alt="css-icon" />
+                                </div>
+                                <div style="display: flex; justify-content: center; align-items: center;">
+                                    <p class="skills-p">C++</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <h3 style="color:white">Backend Technologies</h3>
+                <ul style="list-style-type: none;">
+                    <li>
+                        <div class="m2">
+                            <div class="logo">
+                                <div class="logo-wrapper">
+                                    <img src="./assets/skills/Backend/firebase.png" alt="html-icon" />
+                                </div>
+                                <div style="display: flex; justify-content: center; align-items: center;">
+                                    <p class="skills-p">Firebase</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="m2">
+                            <div class="logo">
+                                <div class="logo-wrapper">
+                                    <img src="./assets/skills/Backend/node.png" alt="css-icon" />
+                                </div>
+                                <div style="display: flex; justify-content: center; align-items: center;">
+                                    <p class="skills-p">Node Js</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+
+
+            <!-- Database Wrapper -->
+            <div>
+                <h3 style="color:white">Databases</h3>
+                <ul style="list-style-type: none;">
+                    <li>
+                        <div class="m2">
+                            <div class="logo">
+                                <div class="logo-wrapper">
+                                    <img src="./assets/skills/Database/mongo.png" alt="html-icon" />
+                                </div>
+                                <div style="display: flex; justify-content: center; align-items: center;">
+                                    <p class="skills-p">MongoDB</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="m2">
+                            <div class="logo">
+                                <div class="logo-wrapper">
+                                    <img src="./assets/skills/Database/mysql.png" alt="css-icon" />
+                                </div>
+                                <div style="display: flex; justify-content: center; align-items: center;">
+                                    <p class="skills-p">MySQL</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+
+
+            <!-- Collaboration/Design Wrapper -->
+            <div>
+                <h3 style="color:white">Collaboration & Design</h3>
+                <ul style="list-style-type: none;">
+                    <li>
+                        <div class="m2">
+                            <div class="logo">
+                                <div class="logo-wrapper">
+                                    <img src="./assets/skills/collaboration/jira.png" alt="html-icon" />
+                                </div>
+                                <div style="display: flex; justify-content: center; align-items: center;">
+                                    <p class="skills-p">Jira</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="m2">
+                            <div class="logo">
+                                <div class="logo-wrapper">
+                                    <img src="./assets/skills/collaboration/slack.png" alt="css-icon" />
+                                </div>
+                                <div style="display: flex; justify-content: center; align-items: center;">
+                                    <p class="skills-p">Slack</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="m2">
+                            <div class="logo">
+                                <div class="logo-wrapper">
+                                    <img src="./assets/skills/collaboration/skype.png" alt="css-icon" />
+                                </div>
+                                <div style="display: flex; justify-content: center; align-items: center;">
+                                    <p class="skills-p">Skype</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="m2">
+                            <div class="logo">
+                                <div class="logo-wrapper">
+                                    <img src="./assets/skills/collaboration/notion.png" alt="css-icon" />
+                                </div>
+                                <div style="display: flex; justify-content: center; align-items: center;">
+                                    <p class="skills-p">Notion</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="m2">
+                            <div class="logo">
+                                <div class="logo-wrapper">
+                                    <img src="./assets/skills/collaboration/figma.png" alt="css-icon" />
+                                </div>
+                                <div style="display: flex; justify-content: center; align-items: center;">
+                                    <p class="skills-p">Figma</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- <li>
+                        <div class="m2">
+                            <div class="logo">
+                                <div class="logo-wrapper">
+                                    <img src="./assets/skills/collaboration/canva.png" alt="css-icon" />
+                                </div>
+                                <div style="display: flex; justify-content: center; align-items: center;">
+                                    <p class="skills-p">Canva</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li> -->
+
+                </ul>
+            </div>
+        </div>
+    </div>
 
     <!-- PROJECTS -->
-    <div class="projects">
+    <div id="projects" class="projects" style="background-color: black;">
         <div class="project-wrapper">
             <h2>Projects</h2>
             <!-- <ul>
@@ -751,9 +1168,8 @@
         </div>
     </div>
 
-
     <!-- ABOUT -->
-    <div class="about">
+    <div id="about" class="about" style="background-color: black;">
         <div class="about-wrapper">
             <!-- <div class="col">
                 <h2>Achievements</h2>
@@ -831,401 +1247,9 @@
         </div>
     </div>
 
-    <!-- Skills -->
-    <div class="skills">
-        <div class="project-wrapper">
-            <h2>Skills</h2>
-            <!-- Frontend Wrapper -->
-            <div>
-                <h3 style="color:white">Frontend Development -- Languages</h3>
-                <ul>
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/Frontend/html.png" alt="html-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p>Html</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/Frontend/css.png" alt="css-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p>Css</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/Frontend/js.png" alt="js-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p>JavaScript</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/Frontend/typescript.png" alt="js-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p>TypeScript</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/Frontend/jquery.png" alt="js-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center; ">
-                                    <p>Jquery</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                </ul>
-
-                <h3 style="color:white">Frontend Development -- Frameworks/Libraries</h3>
-                <ul>
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/Frontend/angular.png" alt="html-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p>Angular</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/Frontend/react.png" alt="css-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p>React Js</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/Frontend/nextjs.png" alt="js-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p>Next Js</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                </ul>
-            </div>
-
-            <!-- Backend Wrapper -->
-            <div>
-                <h3 style="color:white">Backend Development -- Languages</h3>
-                <ul>
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/Backend/php.png" alt="html-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p>PHP</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/Backend/c-.png" alt="css-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p>C++</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                </ul>
-
-                <h3 style="color:white">Backend Development -- Technologies</h3>
-                <ul>
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/Backend/firebase.png" alt="html-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p>Firebase</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/Backend/node.png" alt="css-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p>Node Js</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                </ul>
-            </div>
-
-            <!-- Mobile Wrapper -->
-            <div>
-                <h3 style="color:white">Mobile Development</h3>
-                <ul>
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/Mobile/flutter.png" alt="html-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p>Flutter</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/Mobile/react.png" alt="css-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p>React Native</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/Mobile/ionic.png" alt="css-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p>Ionic</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                </ul>
-            </div>
-
-            <!-- Database Wrapper -->
-            <div>
-                <h3 style="color:white">Databases</h3>
-                <ul>
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/Database/mongo.png" alt="html-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p>MongoDB</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/Database/mysql.png" alt="css-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p>MySQL</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                </ul>
-            </div>
-
-            <!-- Devops/Tools Wrapper -->
-            <div>
-                <h3 style="color:white">DevOps & Tools</h3>
-                <ul>
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/Devops/docker.png" alt="html-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p>Docker</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/Devops/postman.png" alt="css-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p>Potsman</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/Devops/github.png" alt="css-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p>GitHub</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                </ul>
-            </div>
-
-            <!-- Collaboration/Design Wrapper -->
-            <div>
-                <h3 style="color:white">Collaboration & Design</h3>
-                <ul>
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/collaboration/jira.png" alt="html-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p>Jira</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/collaboration/slack.png" alt="css-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p>Slack</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/collaboration/skype.png" alt="css-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p>Skype</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/collaboration/notion.png" alt="css-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p>Notion</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/collaboration/figma.png" alt="css-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p>Figma</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/collaboration/canva.png" alt="css-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p>Canva</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
+    <div class="footer-wrapper">
+        <p class="footer-p">2025 - Ambar Mishra. All rights reserved. - DebugWithToxic</p>
     </div>
-
-
 
 </body>
 

@@ -2,1255 +2,739 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
-    <title>Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ambar Mishra — Software Developer specializing in React Native, Angular, Flutter, and Full Stack development. View my portfolio, projects, and experience." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+  <title>Ambar Mishra — Software Developer</title>
 </head>
 
 <body>
-    <!-- HEADER -->
-    <header>
-        <div class="header-wrapper">
-            <button>
-                <h3 class="portfolio-h">🔥 Download CV</h3>
-            </button>
-            <nav>
-                <!-- <a href="#education"> -->
-                <button onclick="location.href='#education'">CONTACT ME</button>
-                <!-- </a> -->
-            </nav>
-        </div>
-    </header>
 
-    <!-- HERO -->
-    <div class="hero" style="background-color: transparent;">
-        <div>
-            <img class="profile-img" src="./assets/Profile_Photo.jpg" />
-        </div>
-        <h1 style="color: #FF4500">Ambar Mishra</h1>
-        <p>Software Developer</p>
+  <!-- ===== HEADER ===== -->
+  <header id="header">
+    <div class="header-inner">
+      <a href="#hero" class="logo-text">AM<span class="accent">.</span></a>
+      <nav class="nav-links">
+        <a href="#youtube" class="nav-link">YouTube</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a href="https://drive.google.com/file/d/13btn58yWUS6-7P_vyAo1Rf0s41g9SRVr/view?usp=sharing" target="_blank" class="btn-cv" id="download-cv">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download CV
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-nav" id="mobile-nav">
+      <a href="#youtube" class="mobile-nav-link">YouTube</a>
+      <a href="#experience" class="mobile-nav-link">Experience</a>
+      <a href="#education" class="mobile-nav-link">Education</a>
+      <a href="#skills" class="mobile-nav-link">Skills</a>
+      <a href="#projects" class="mobile-nav-link">Projects</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero" class="hero-split">
+    <!-- 1. Background Split -->
+    <div class="hero-split-bg">
+      <div class="hero-split-left"></div>
+      <div class="hero-split-right"></div>
     </div>
 
-    <!-- Experience / Work History -->
-    <div id="experience" class="skills" style="background-color: black;">
-        <div class="project-wrapper">
-            <h2>Experience / Work History</h2>
-            <div class="stepper-box">
-                <div class="stepper-step stepper-completed">
-                    <!-- <div class="stepper-responsive"> -->
-                    <div class="stepper-circle">
-                        <svg viewBox="0 0 16 16" class="bi bi-check-lg" fill="currentColor" height="16" width="16"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z">
-                            </path>
-                        </svg>
-                    </div>
-                    <div class="stepper-line"></div>
-                    <div class="stepper-content">
-                        <div class="stepper-title">Keyideas Infotech Private Limited</div>
-                        <div class="stepper-status">Completed</div>
-                        <div class="stepper-status stepper-job">Full Time</div>
-                        <div class="stepper-time">Aug 2024 - Jan 2025</div>
-                        <!-- </div> -->
-                    </div>
-                    <div style="width: 50%;" class="ol-wrapper">
-                        <ol type="1" style="margin:0">
-                            <li class="desc-work">Completed a 6-month full-time role as a Software
-                                Developer Trainee,
-                                developing a
-                                cross-platform mobile application
-                                using React Native for a diamond listing and purchasing platform, with adaptive UI
-                                components
-                                optimized
-                                for
-                                various screen sizes.</li>
-
-                            <li class="desc-work">
-                                Customized and enhanced the React Native-based application, improved performance and
-                                loading
-                                speed,
-                                and
-                                resolved critical UI/UX and functionality bugs.</li>
-                        </ol>
-
-                    </div>
-                </div>
-
-                <div class="stepper-step stepper-completed">
-                    <!-- <div class="stepper-responsive"> -->
-                    <div class="stepper-circle">
-                        <svg viewBox="0 0 16 16" class="bi bi-check-lg" fill="currentColor" height="16" width="16"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z">
-                            </path>
-                        </svg>
-                    </div>
-                    <div class="stepper-line"></div>
-                    <div class="stepper-content">
-                        <div class="stepper-title">Shreeva Soft-Tech Innovations Pvt. Ltd.</div>
-                        <div class="stepper-status">Completed</div>
-                        <div class="stepper-status stepper-job">Full Time</div>
-                        <div class="stepper-time">Feb 2024 - Aug 2024</div>
-                        <!-- </div> -->
-                    </div>
-
-                    <div style="width: 50%;" class="ol-wrapper">
-                        <ol style="margin:0" type="1">
-                            <li class="desc-work">Worked for 6 months as a Full Stack Developer
-                                using Angular, Firebase, and
-                                Ionic to build mobile applications and
-                                websites. Developed a three-panel e-commerce system including a customer app, delivery
-                                agent
-                                app, and an admin
-                                dashboard.</li>
-
-                            <li class="desc-work">
-                                Led ateam of 8individuals in delivering an attendance tracking system for an
-                                international
-                                client using Angular,
-                                Ionic, and Capacitor.</li>
-                        </ol>
-
-                    </div>
-                </div>
-
-                <div class="stepper-step stepper-completed">
-                    <!-- <div class="stepper-responsive"> -->
-                    <div class="stepper-circle">
-                        <svg viewBox="0 0 16 16" class="bi bi-check-lg" fill="currentColor" height="16" width="16"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z">
-                            </path>
-                        </svg>
-                    </div>
-                    <div class="stepper-line"></div>
-                    <div class="stepper-content">
-                        <div class="stepper-title">Prayagraj Municipal Corporation</div>
-                        <div class="stepper-status">Completed</div>
-                        <div class="stepper-status stepper-job">Internship</div>
-                        <div class="stepper-time">June 2023 - Aug 2023</div>
-                        <!-- </div> -->
-                    </div>
-
-                    <div style="width: 50%;" class="ol-wrapper">
-                        <ol style="margin:0" type="1">
-                            <li class="desc-work">Contributed during a 2-month internship to the
-                                official Prayagraj Smart City
-                                website by fixing bugs and designing
-                                intuitive user interfaces to improve user experience.</li>
-
-                            <li class="desc-work">
-                                Developed a Library and Sports Complex Management System using Flutter and Firebase,
-                                aimed at
-                                repurposing
-                                government school facilities into public libraries after school hours.</li>
-
-                            <li class="desc-work">Implemented features to list available sports trainers along with
-                                pricing
-                                for training sessions and sports complex
-                                registration.</li>
-                        </ol>
-
-                    </div>
-                </div>
-
-                <!-- <div class="stepper-step stepper-active">
-            <div class="stepper-circle">2</div>
-            <div class="stepper-line"></div>
-            <div class="stepper-content">
-                <div class="stepper-title">Processing</div>
-                <div class="stepper-status">In Progress</div>
-                <div class="stepper-time">May 29, 02:15 PM</div>
-            </div>
-        </div> -->
-
-                <!-- <div class="stepper-step stepper-pending">
-            <div class="stepper-circle">3</div>
-            <div class="stepper-content">
-                <div class="stepper-title">Shipping</div>
-                <div class="stepper-status">Pending</div>
-                <div class="stepper-time">Estimated: May 30</div>
-            </div>
-        </div> -->
-
-                <!-- <div class="stepper-controls">
-            <button class="stepper-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-arrow-left" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8">
-                    </path>
-                </svg>
-                Previous
-            </button>
-            <button class="stepper-button stepper-button-primary">
-                Next
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-arrow-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8">
-                    </path>
-                </svg>
-            </button>
-        </div> -->
-            </div>
-        </div>
+    <!-- 2. Giant Background Text Layer -->
+    <div class="hero-marquee-layer">
+      <div class="hero-marquee-content">
+        <h1 class="hero-marquee-text">
+          <span class="outline-dark">SOFTWARE</span>
+          <span class="outline-light">DEVELOPER</span>
+        </h1>
+        <h1 class="hero-marquee-text">
+          <span class="outline-dark">SOFTWARE</span>
+          <span class="outline-light">DEVELOPER</span>
+        </h1>
+      </div>
     </div>
 
-    <!-- Education -->
-    <div id="education" class="skills" style="background-color: black;">
-        <div class="project-wrapper" style="display: flex; justify-content: space-between; align-items: center;">
-            <h2>Education</h2>
-            <div class="stepper-box" style="width: 40%;">
-                <div class="stepper-step stepper-completed">
-                    <!-- <div class="stepper-responsive"> -->
-                    <div class="stepper-circle">
-                        <svg viewBox="0 0 16 16" class="bi bi-check-lg" fill="currentColor" height="16" width="16"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z">
-                            </path>
-                        </svg>
-                    </div>
-                    <div class="stepper-line"></div>
-                    <div class="stepper-content">
-                        <div class="stepper-title">Dr. A.P.J. Abdul Kalam Technical University, Lucknow, India
-                        </div>
-                        <div class="stepper-status">Bachelor of Technology in Computer Science and Engineering</div>
-                        <div class="stepper-status">Completed</div>
-                        <div class="stepper-status stepper-job">Full Time</div>
-                        <div class="stepper-time">2020 - 2024</div>
-                        <!-- </div> -->
-                    </div>
-
-
-                </div>
-
-                <div class="stepper-step stepper-completed">
-                    <!-- <div class="stepper-responsive"> -->
-                    <div class="stepper-circle">
-                        <svg viewBox="0 0 16 16" class="bi bi-check-lg" fill="currentColor" height="16" width="16"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z">
-                            </path>
-                        </svg>
-                    </div>
-                    <div class="stepper-line"></div>
-                    <div class="stepper-content">
-                        <div class="stepper-title">Aatmdeep Vidyalaya, India</div>
-                        <div class="stepper-status">Senior Secondary School</div>
-                        <div class="stepper-status">Completed</div>
-                        <div class="stepper-status stepper-job">Full Time</div>
-                        <div class="stepper-time">2018 - 2020</div>
-                        <!-- </div> -->
-                    </div>
-
-                </div>
-
-                <div class="stepper-step stepper-completed">
-                    <!-- <div class="stepper-responsive"> -->
-                    <div class="stepper-circle">
-                        <svg viewBox="0 0 16 16" class="bi bi-check-lg" fill="currentColor" height="16" width="16"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z">
-                            </path>
-                        </svg>
-                    </div>
-                    <div class="stepper-line"></div>
-                    <div class="stepper-content">
-                        <div class="stepper-title">Central Hindu School</div>
-                        <div class="stepper-status">Secondary School</div>
-                        <div class="stepper-status">Completed</div>
-                        <div class="stepper-status stepper-job">Full Time</div>
-                        <div class="stepper-time">2016 - 2018</div>
-                        <!-- </div> -->
-                    </div>
-                </div>
-
-                <!-- <div class="stepper-step stepper-active">
-            <div class="stepper-circle">2</div>
-            <div class="stepper-line"></div>
-            <div class="stepper-content">
-                <div class="stepper-title">Processing</div>
-                <div class="stepper-status">In Progress</div>
-                <div class="stepper-time">May 29, 02:15 PM</div>
-            </div>
-        </div> -->
-
-                <!-- <div class="stepper-step stepper-pending">
-            <div class="stepper-circle">3</div>
-            <div class="stepper-content">
-                <div class="stepper-title">Shipping</div>
-                <div class="stepper-status">Pending</div>
-                <div class="stepper-time">Estimated: May 30</div>
-            </div>
-        </div> -->
-
-                <!-- <div class="stepper-controls">
-            <button class="stepper-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-arrow-left" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8">
-                    </path>
-                </svg>
-                Previous
-            </button>
-            <button class="stepper-button stepper-button-primary">
-                Next
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-arrow-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8">
-                    </path>
-                </svg>
-            </button>
-        </div> -->
-
-            </div>
-
-            <!-- CONTACT SECTION -->
-            <div class="cs-card">
-                <!-- <button class="cs-mail">
-            <svg class="lucide lucide-mail" stroke-linejoin="round" stroke-linecap="round" stroke-width="2"
-                stroke="currentColor" fill="none" viewBox="0 0 24 24" height="24" width="24"
-                xmlns="http://www.w3.org/2000/svg">
-                <rect rx="2" y="4" x="2" height="16" width="20"></rect>
-                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-            </svg>
-        </button> -->
-
-                <div class="cs-background">
-                    <div class="h-wrapper">
-                        <h2 style="margin-top: 5px;">Contact Me</h2>
-                    </div>
-
-                    <div class="info-wrapper">
-
-                        <div style="margin-bottom: 10px;" class="p-box">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(0,0,0,1)">
-                                <path
-                                    d="M21 8C22.1046 8 23 8.89543 23 10V14C23 15.1046 22.1046 16 21 16H19.9381C19.446 19.9463 16.0796 23 12 23V21C15.3137 21 18 18.3137 18 15V9C18 5.68629 15.3137 3 12 3C8.68629 3 6 5.68629 6 9V16H3C1.89543 16 1 15.1046 1 14V10C1 8.89543 1.89543 8 3 8H4.06189C4.55399 4.05369 7.92038 1 12 1C16.0796 1 19.446 4.05369 19.9381 8H21ZM7.75944 15.7849L8.81958 14.0887C9.74161 14.6662 10.8318 15 12 15C13.1682 15 14.2584 14.6662 15.1804 14.0887L16.2406 15.7849C15.0112 16.5549 13.5576 17 12 17C10.4424 17 8.98882 16.5549 7.75944 15.7849Z">
-                                </path>
-                            </svg>
-                            <p>7007720839</p>
-                        </div>
-
-                        <div style="border-radius: 40px; margin: 0 0 10px 0; padding: 0px 10px 0px 10px;" class="p-box">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(0,0,0,1)">
-                                <path
-                                    d="M21 3C21.5523 3 22 3.44772 22 4V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V19H20V7.3L12 14.5L2 5.5V4C2 3.44772 2.44772 3 3 3H21ZM8 15V17H0V15H8ZM5 10V12H0V10H5ZM19.5659 5H4.43414L12 11.8093L19.5659 5Z">
-                                </path>
-                            </svg>
-                            <p>ambarmishra740@gmail.com</p>
-                        </div>
-
-                        <div style="border-radius: 40px; margin: 0;" class="p-box">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(0,0,0,1)">
-                                <path
-                                    d="M12 20.8995L16.9497 15.9497C19.6834 13.2161 19.6834 8.78392 16.9497 6.05025C14.2161 3.31658 9.78392 3.31658 7.05025 6.05025C4.31658 8.78392 4.31658 13.2161 7.05025 15.9497L12 20.8995ZM12 23.7279L5.63604 17.364C2.12132 13.8492 2.12132 8.15076 5.63604 4.63604C9.15076 1.12132 14.8492 1.12132 18.364 4.63604C21.8787 8.15076 21.8787 13.8492 18.364 17.364L12 23.7279ZM12 13C13.1046 13 14 12.1046 14 11C14 9.89543 13.1046 9 12 9C10.8954 9 10 9.89543 10 11C10 12.1046 10.8954 13 12 13ZM12 15C9.79086 15 8 13.2091 8 11C8 8.79086 9.79086 7 12 7C14.2091 7 16 8.79086 16 11C16 13.2091 14.2091 15 12 15Z">
-                                </path>
-                            </svg>
-                            <p>Gorakhpur, India</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- <div class="cs-profile-pic"></div> -->
-                <div class="cs-bottom">
-                    <div class="cs-content">
-                        <span class="cs-name">Ambar Mishra</span>
-                        <span class="cs-about-me">Software Developer with a strong passion for promoting education
-                            through
-                            social media, and a keen interest in hackathons and collaborating with diverse teams.
-                        </span>
-                    </div>
-                    <div class="cs-bottom-bottom">
-                        <div class="cs-social-links-container">
-
-                            <!-- Github -->
-                            <a target="_blank" href="https://github.com/ambarmishraa">
-                                <svg viewBox="0 0 496 512" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
-                                    </path>
-                                </svg>
-                            </a>
-
-                            <!-- Linkedin -->
-                            <a target="_blank" href="https://www.linkedin.com/in/er-ambar-mishra-5940922b4/">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                    <path
-                                        d="M18.3362 18.339H15.6707V14.1622C15.6707 13.1662 15.6505 11.8845 14.2817 11.8845C12.892 11.8845 12.6797 12.9683 12.6797 14.0887V18.339H10.0142V9.75H12.5747V10.9207H12.6092C12.967 10.2457 13.837 9.53325 15.1367 9.53325C17.8375 9.53325 18.337 11.3108 18.337 13.6245V18.339H18.3362ZM7.00373 8.57475C6.14573 8.57475 5.45648 7.88025 5.45648 7.026C5.45648 6.1725 6.14648 5.47875 7.00373 5.47875C7.85873 5.47875 8.55173 6.1725 8.55173 7.026C8.55173 7.88025 7.85798 8.57475 7.00373 8.57475ZM8.34023 18.339H5.66723V9.75H8.34023V18.339ZM19.6697 3H4.32923C3.59498 3 3.00098 3.5805 3.00098 4.29675V19.7033C3.00098 20.4202 3.59498 21 4.32923 21H19.6675C20.401 21 21.001 20.4202 21.001 19.7033V4.29675C21.001 3.5805 20.401 3 19.6675 3H19.6697Z">
-                                    </path>
-                                </svg>
-                            </a>
-
-                            <!-- Youtube -->
-                            <a target="_blank" href="https://www.youtube.com/@DebugWithToxic">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(0,0,0,1)">
-                                    <path
-                                        d="M12.2439 4C12.778 4.00294 14.1143 4.01586 15.5341 4.07273L16.0375 4.09468C17.467 4.16236 18.8953 4.27798 19.6037 4.4755C20.5486 4.74095 21.2913 5.5155 21.5423 6.49732C21.942 8.05641 21.992 11.0994 21.9982 11.8358L21.9991 11.9884L21.9991 11.9991C21.9991 11.9991 21.9991 12.0028 21.9991 12.0099L21.9982 12.1625C21.992 12.8989 21.942 15.9419 21.5423 17.501C21.2878 18.4864 20.5451 19.261 19.6037 19.5228C18.8953 19.7203 17.467 19.8359 16.0375 19.9036L15.5341 19.9255C14.1143 19.9824 12.778 19.9953 12.2439 19.9983L12.0095 19.9991L11.9991 19.9991C11.9991 19.9991 11.9956 19.9991 11.9887 19.9991L11.7545 19.9983C10.6241 19.9921 5.89772 19.941 4.39451 19.5228C3.4496 19.2573 2.70692 18.4828 2.45587 17.501C2.0562 15.9419 2.00624 12.8989 2 12.1625V11.8358C2.00624 11.0994 2.0562 8.05641 2.45587 6.49732C2.7104 5.51186 3.45308 4.73732 4.39451 4.4755C5.89772 4.05723 10.6241 4.00622 11.7545 4H12.2439ZM9.99911 8.49914V15.4991L15.9991 11.9991L9.99911 8.49914Z">
-                                    </path>
-                                </svg>
-                            </a>
-
-                            <!-- Instagram -->
-                            <a target="_blank" href="https://www.instagram.com/ambar_mishra__/">
-                                <svg viewBox="0 0 16 15.999" height="15.999" width="16"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path transform="translate(6 598)"
-                                        d="M6-582H-2a4,4,0,0,1-4-4v-8a4,4,0,0,1,4-4H6a4,4,0,0,1,4,4v8A4,4,0,0,1,6-582ZM2-594a4,4,0,0,0-4,4,4,4,0,0,0,4,4,4,4,0,0,0,4-4A4.005,4.005,0,0,0,2-594Zm4.5-2a1,1,0,0,0-1,1,1,1,0,0,0,1,1,1,1,0,0,0,1-1A1,1,0,0,0,6.5-596ZM2-587.5A2.5,2.5,0,0,1-.5-590,2.5,2.5,0,0,1,2-592.5,2.5,2.5,0,0,1,4.5-590,2.5,2.5,0,0,1,2-587.5Z"
-                                        data-name="Subtraction 4" id="Subtraction_4"></path>
-                                </svg>
-                            </a>
-
-                        </div>
-                        <a href="https://drive.google.com/file/d/13btn58yWUS6-7P_vyAo1Rf0s41g9SRVr/view?usp=sharing"
-                            target="_blank">
-                            <button class="cs-button"><b>Resume</b></button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
+    <!-- 3. Character Image Layer -->
+    <div class="hero-image-layer reveal fade-up">
+      <img src="./assets/Profile_Photo.png" alt="Ambar Mishra" class="hero-character" />
     </div>
 
-    <!-- Skills -->
-    <div id="skills" class="skills">
-        <div class="project-wrapper">
-            <h2>Skills</h2>
-            <!-- Frontend Wrapper -->
-            <div>
-                <h3 style="color:white">Frontend Languages</h3>
-                <ul style="list-style-type: none;">
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/Frontend/html.png" alt="html-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p class="skills-p">Html</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
+    <!-- 4. Content Overlay Layer -->
+    <div class="hero-overlay reveal fade-up delay-2">
+      <!-- Top Text -->
+      <div class="hero-title-top">
+        <h2>I'm Ambar</h2>
+      </div>
 
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/Frontend/css.png" alt="css-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p class="skills-p">Css</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/Frontend/js.png" alt="js-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p class="skills-p">JavaScript</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/Frontend/typescript.png" alt="js-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p class="skills-p">TypeScript</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/Frontend/jquery.png" alt="js-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center; ">
-                                    <p class="skills-p">Jquery</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                </ul>
-
-                <h3 style="color:white">Frontend Frameworks/Libraries</h3>
-                <ul style="list-style-type: none;">
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/Frontend/angular.png" alt="html-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p class="skills-p">Angular</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/Frontend/react.png" alt="css-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p class="skills-p">React Js</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/Frontend/nextjs.png" alt="js-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p class="skills-p">Next Js</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                </ul>
-            </div>
-
-            <!-- Mobile Wrapper -->
-            <div>
-                <h3 style="color:white">Mobile Development</h3>
-                <ul style="list-style-type: none;">
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/Mobile/flutter.png" alt="html-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p class="skills-p">Flutter</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/Mobile/react.png" alt="css-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p class="skills-p">React Native</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/Mobile/ionic.png" alt="css-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p class="skills-p">Ionic</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                </ul>
-            </div>
-
-            <!-- Devops/Tools Wrapper -->
-            <div>
-                <h3 style="color:white">DevOps & Tools</h3>
-                <ul style="list-style-type: none;">
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/Devops/docker.png" alt="html-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p class="skills-p">Docker</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/Devops/postman.png" alt="css-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p class="skills-p">Potsman</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/Devops/github.png" alt="css-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p class="skills-p">GitHub</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                </ul>
-            </div>
-
-            <!-- Backend Wrapper -->
-            <div>
-                <h3 style="color:white">Backend Languages</h3>
-                <ul style="list-style-type: none;">
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/Backend/php.png" alt="html-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p class="skills-p">PHP</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/Backend/c-.png" alt="css-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p class="skills-p">C++</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                </ul>
-
-                <h3 style="color:white">Backend Technologies</h3>
-                <ul style="list-style-type: none;">
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/Backend/firebase.png" alt="html-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p class="skills-p">Firebase</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/Backend/node.png" alt="css-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p class="skills-p">Node Js</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                </ul>
-            </div>
-
-
-
-            <!-- Database Wrapper -->
-            <div>
-                <h3 style="color:white">Databases</h3>
-                <ul style="list-style-type: none;">
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/Database/mongo.png" alt="html-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p class="skills-p">MongoDB</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/Database/mysql.png" alt="css-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p class="skills-p">MySQL</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                </ul>
-            </div>
-
-
-
-            <!-- Collaboration/Design Wrapper -->
-            <div>
-                <h3 style="color:white">Collaboration & Design</h3>
-                <ul style="list-style-type: none;">
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/collaboration/jira.png" alt="html-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p class="skills-p">Jira</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/collaboration/slack.png" alt="css-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p class="skills-p">Slack</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/collaboration/skype.png" alt="css-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p class="skills-p">Skype</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/collaboration/notion.png" alt="css-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p class="skills-p">Notion</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/collaboration/figma.png" alt="css-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p class="skills-p">Figma</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <!-- <li>
-                        <div class="m2">
-                            <div class="logo">
-                                <div class="logo-wrapper">
-                                    <img src="./assets/skills/collaboration/canva.png" alt="css-icon" />
-                                </div>
-                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <p class="skills-p">Canva</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li> -->
-
-                </ul>
-            </div>
+      <!-- Bottom Row -->
+      <div class="hero-bottom-row">
+        <!-- Quote -->
+        <div class="hero-quote-box">
+          <span class="hero-quote-mark">“</span>
+          <p class="hero-quote-text">
+            Ambar's exceptional product design ensures our project's success. <br />
+            <strong>Highly Recommended</strong>
+          </p>
         </div>
+
+        <!-- Stats -->
+        <div class="hero-stats-box">
+          <div class="hero-stars">★★★★★</div>
+          <div>
+            <div class="hero-years">+1 Years</div>
+            <div class="hero-exp-label">EXPERIENCE</div>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <!-- PROJECTS -->
-    <div id="projects" class="projects" style="background-color: black;">
-        <div class="project-wrapper">
-            <h2>Projects</h2>
-            <!-- <ul>
-                <li>
-                    <a href="https://github.com/Toxic-Kratos/TRINETRA">
-                        <img src="./assets/trinetra.jpg" />
-                        <p>TriNetra #1
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GitHub
-                        </p>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://drive.google.com/file/d/1Db8qvVEp9T8F6XlLhKKCrgaRbI0YHFYb/view?usp=drivesdk ">
-                        <img src="./assets/sonekatinka.jpg" />
-                        <p>Sone Ka Tinka #2
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Video
-                        </p>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://drive.google.com/file/d/1Ba7aFOKGE-y9jsJ088x8UH1CDcazQA1q/view?usp=drivesdk ">
-                        <img src="./assets/pikachu.jpg" />
-                        <p>Pikachu #3
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Video
-                        </p>
-                    </a>
-                </li>
-            </ul> -->
+  <!-- ===== YOUTUBE ===== -->
+  <section id="youtube" class="section section-alt">
+    <div class="section-inner">
+      <div class="section-header reveal fade-up">
+        <span class="section-tag yt-tag">Content Creator</span>
+        <h2 class="section-title">My YouTube Channel</h2>
+        <p class="section-subtitle">Tutorials, coding tips, and real-world dev content</p>
+      </div>
 
-            <ul style="list-style-type: none;">
-                <!-- Pace Scholar -->
-                <li>
-                    <div class="card">
-                        <div class="content">
-                            <div class="back">
-                                <div class="back-content">
-                                    <div style="width: 200px; height: 125px;" class="card">
-                                        <div class="content">
-                                            <div class="back">
-                                                <div style="border-radius: 5px; width:98%; height:98%; overflow: hidden;"
-                                                    class="back-content">
-                                                    <img src="./assets/projects/pace_scholar.png" alt="Skill" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div style="background-color: transparent;">
-                                        <p
-                                            style="background-color: transparent; font-weight: bold; margin-bottom: 10px;">
-                                            Pace Scholar</p>
-                                        <div
-                                            style="display: flex; justify-content: center; background-color: transparent;">
-                                            <button>Details</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
+      <div class="yt-layout">
 
-                <!-- Aqua Learner -->
-                <li>
-                    <div class="card">
-                        <div class="content">
-                            <div class="back">
-                                <div class="back-content">
-                                    <div style="width: 200px; height: 125px;" class="card">
-                                        <div class="content">
-                                            <div class="back">
-                                                <div style="border-radius: 5px; width:98%; height:98%; overflow: hidden;"
-                                                    class="back-content">
-                                                    <img src="./assets/projects/aqua_learner.png" alt="Skill" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div style="background-color: transparent;">
-                                        <p
-                                            style="background-color: transparent; font-weight: bold; margin-bottom: 10px;">
-                                            Aqua Learner</p>
-                                        <div
-                                            style="display: flex; justify-content: center; background-color: transparent;">
-                                            <button>Details</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
+        <!-- Channel Card -->
+        <div class="yt-channel-card glass-card reveal fade-left delay-1">
+          <div class="yt-channel-header">
+            <div class="yt-avatar-ring">
+              <img src="./assets/Profile_Photo.png" alt="CodeWithAmbar" class="yt-avatar" />
+            </div>
+            <div class="yt-channel-info">
+              <h3 class="yt-channel-name">CodeWithAmbar</h3>
+              <p class="yt-channel-handle">@CodeWithAmbar</p>
+            </div>
+          </div>
 
-                <!-- Company Property Allotment Tracking Tool  -->
-                <li>
-                    <div class="card">
-                        <div class="content">
-                            <div class="back">
-                                <div class="back-content">
-                                    <div style="width: 200px; height: 125px;" class="card">
-                                        <div class="content">
-                                            <div class="back">
-                                                <div style="border-radius: 5px; width:98%; height:98%; overflow: hidden;"
-                                                    class="back-content">
-                                                    <img src="./assets/projects/property_tracker.png" alt="Skill" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div style="background-color: transparent;">
-                                        <p
-                                            style="background-color: transparent; font-weight: bold; margin-bottom: 10px;">
-                                            <span
-                                                style="display: flex; justify-content: center; background-color: transparent;">
-                                                Property
-                                            </span>Allotment Tracker
-                                        </p>
-                                        <div
-                                            style="display: flex; justify-content: center; background-color: transparent;">
-                                            <button>Details</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
+          <p class="yt-channel-desc">
+            I create coding tutorials, project walkthroughs, and dev tips to help aspiring developers
+            level up their skills. From mobile apps with React Native and Flutter to full-stack web
+            projects — there's something for every developer.
+          </p>
 
-                <!-- ADHD Detection Game -->
-                <li>
-                    <div class="card">
-                        <div class="content">
-                            <div class="back">
-                                <div class="back-content">
-                                    <div style="width: 200px; height: 125px;" class="card">
-                                        <div class="content">
-                                            <div class="back">
-                                                <div style="border-radius: 5px; width:98%; height:98%; overflow: hidden;"
-                                                    class="back-content">
-                                                    <img src="./assets/projects/adhd.png" alt="Skill" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div style="background-color: transparent;">
-                                        <p
-                                            style="background-color: transparent; font-weight: bold; margin-bottom: 10px;">
-                                            <span
-                                                style="display: flex; justify-content: center; background-color: transparent;">
-                                                ADHD
-                                            </span>Detection Game
-                                        </p>
-                                        <div
-                                            style="display: flex; justify-content: center; background-color: transparent;">
-                                            <button>Details</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
+          <div class="yt-stats">
+            <div class="yt-stat-item">
+              <span class="yt-stat-icon">🎬</span>
+              <div>
+                <p class="yt-stat-value">Videos</p>
+                <p class="yt-stat-label">Regular uploads</p>
+              </div>
+            </div>
+            <div class="yt-stat-item">
+              <span class="yt-stat-icon">👨‍💻</span>
+              <div>
+                <p class="yt-stat-value">Dev Tutorials</p>
+                <p class="yt-stat-label">React, Flutter &amp; more</p>
+              </div>
+            </div>
+            <div class="yt-stat-item">
+              <span class="yt-stat-icon">🚀</span>
+              <div>
+                <p class="yt-stat-value">Free Content</p>
+                <p class="yt-stat-label">100% free to learn</p>
+              </div>
+            </div>
+          </div>
 
-                <!-- Web Extension For Specially Abled  -->
-                <li>
-                    <div class="card">
-                        <div class="content">
-                            <div class="back">
-                                <div class="back-content">
-                                    <div style="width: 200px; height: 125px;" class="card">
-                                        <div class="content">
-                                            <div class="back">
-                                                <div style="border-radius: 5px; width:98%; height:98%; overflow: hidden;"
-                                                    class="back-content">
-                                                    <img src="./assets/projects/extension.png" alt="Skill" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div style="background-color: transparent;">
-                                        <p
-                                            style="background-color: transparent; font-weight: bold; margin-bottom: 10px;">
-                                            <span
-                                                style="display: flex; justify-content: center; background-color: transparent;">
-                                                Web Extension For
-                                            </span><span
-                                                style="display: flex; justify-content: center; background-color: transparent;">Specially
-                                                Abled</span>
-                                        </p>
-                                        <div
-                                            style="display: flex; justify-content: center; background-color: transparent;">
-                                            <button>Details</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
+          <div class="yt-cta-group">
+            <a href="https://www.youtube.com/@CodeWithAmbar" target="_blank" class="btn-yt-subscribe">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12.2439 4C12.778 4.00294 14.1143 4.01586 15.5341 4.07273L16.0375 4.09468C17.467 4.16236 18.8953 4.27798 19.6037 4.4755C20.5486 4.74095 21.2913 5.5155 21.5423 6.49732C21.942 8.05641 21.992 11.0994 21.9982 11.8358L21.9991 11.9884L21.9991 11.9991C21.9991 11.9991 21.9991 12.0028 21.9991 12.0099L21.9982 12.1625C21.992 12.8989 21.942 15.9419 21.5423 17.501C21.2878 18.4864 20.5451 19.261 19.6037 19.5228C18.8953 19.7203 17.467 19.8359 16.0375 19.9036L15.5341 19.9255C14.1143 19.9824 12.778 19.9953 12.2439 19.9983L12.0095 19.9991L11.9991 19.9991C11.9991 19.9991 11.9956 19.9991 11.9887 19.9991L11.7545 19.9983C10.6241 19.9921 5.89772 19.941 4.39451 19.5228C3.4496 19.2573 2.70692 18.4828 2.45587 17.501C2.0562 15.9419 2.00624 12.8989 2 12.1625V11.8358C2.00624 11.0994 2.0562 8.05641 2.45587 6.49732C2.7104 5.51186 3.45308 4.73732 4.39451 4.4755C5.89772 4.05723 10.6241 4.00622 11.7545 4H12.2439ZM9.99911 8.49914V15.4991L15.9991 11.9991L9.99911 8.49914Z"/></svg>
+              Subscribe on YouTube
+            </a>
+            <a href="https://www.youtube.com/@CodeWithAmbar/videos" target="_blank" class="btn-outline">
+              View All Videos
+            </a>
+          </div>
+        </div>
 
-                <!-- EdUnited -->
-                <li>
-                    <div class="card">
-                        <div class="content">
-                            <div class="back">
-                                <div class="back-content">
-                                    <div style="width: 200px; height: 125px;" class="card">
-                                        <div class="content">
-                                            <div class="back">
-                                                <div style="border-radius: 5px; width:98%; height:98%; overflow: hidden;"
-                                                    class="back-content">
-                                                    <img src="./assets/projects/edunited.png" alt="Skill" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div style="background-color: transparent;">
-                                        <p
-                                            style="background-color: transparent; font-weight: bold; margin-bottom: 10px;">
-                                            <span
-                                                style="display: flex; justify-content: center; background-color: transparent;">
-                                                EdUnited
-                                            </span>
-                                        </p>
-                                        <div
-                                            style="display: flex; justify-content: center; background-color: transparent;">
-                                            <button>Details</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
+        <!-- Featured Video + Topics -->
+        <div class="yt-right reveal fade-right delay-2">
 
-                <!-- Virtual Reality In Education (Pratibimb)  -->
-                <li>
-                    <div class="card">
-                        <div class="content">
-                            <div class="back">
-                                <div class="back-content">
-                                    <div style="width: 200px; height: 125px;" class="card">
-                                        <div class="content">
-                                            <div class="back">
-                                                <div style="border-radius: 5px; width:98%; height:98%; overflow: hidden;"
-                                                    class="back-content">
-                                                    <img src="./assets/projects/vr.png" alt="Skill" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div style="background-color: transparent;">
-                                        <p
-                                            style="background-color: transparent; font-weight: bold; margin-bottom: 10px;">
-                                            <span
-                                                style="display: flex; justify-content: center; background-color: transparent;">
-                                                Virtual Reality In
-                                            </span><span
-                                                style="display: flex; justify-content: center; background-color: transparent;">Education</span>
-                                        </p>
-                                        <div
-                                            style="display: flex; justify-content: center; background-color: transparent;">
-                                            <button>Details</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
+          <!-- Featured Video Player -->
+          <div class="yt-video-wrapper glass-card">
+            <div class="yt-video-label">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ff0000" width="18" height="18"><path d="M12.2439 4C12.778 4.00294 14.1143 4.01586 15.5341 4.07273L16.0375 4.09468C17.467 4.16236 18.8953 4.27798 19.6037 4.4755C20.5486 4.74095 21.2913 5.5155 21.5423 6.49732C21.942 8.05641 21.992 11.0994 21.9982 11.8358L21.9991 11.9884L21.9991 11.9991C21.9991 11.9991 21.9991 12.0028 21.9991 12.0099L21.9982 12.1625C21.992 12.8989 21.942 15.9419 21.5423 17.501C21.2878 18.4864 20.5451 19.261 19.6037 19.5228C18.8953 19.7203 17.467 19.8359 16.0375 19.9036L15.5341 19.9255C14.1143 19.9824 12.778 19.9953 12.2439 19.9983L12.0095 19.9991L11.9991 19.9991C11.9991 19.9991 11.9956 19.9991 11.9887 19.9991L11.7545 19.9983C10.6241 19.9921 5.89772 19.941 4.39451 19.5228C3.4496 19.2573 2.70692 18.4828 2.45587 17.501C2.0562 15.9419 2.00624 12.8989 2 12.1625V11.8358C2.00624 11.0994 2.0562 8.05641 2.45587 6.49732C2.7104 5.51186 3.45308 4.73732 4.39451 4.4755C5.89772 4.05723 10.6241 4.00622 11.7545 4H12.2439ZM9.99911 8.49914V15.4991L15.9991 11.9991L9.99911 8.49914Z"/></svg>
+              <span>Latest from the Channel</span>
+            </div>
+            <div class="yt-embed-container">
+              <iframe
+                src="https://www.youtube.com/embed?listType=user_uploads&list=CodeWithAmbar&index=1"
+                title="CodeWithAmbar — Latest Video"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
 
-                <!-- Trinetra -->
-                <!-- <li>
-                    <div class="card">
-                        <div class="content">
-                            <div class="back">
-                                <div class="back-content">
-                                    <div style="width: 200px; height: 125px;" class="card">
-                                        <div class="content">
-                                            <div class="back">
-                                                <div style="border-radius: 5px; width:98%; height:98%; overflow: hidden;"
-                                                    class="back-content">
-                                                    <img src="./assets/sonekatinka.jpg" alt="Skill" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div style="background-color: transparent;">
-                                        <p
-                                            style="background-color: transparent; font-weight: bold; margin-bottom: 10px;">
-                                            <span
-                                                style="display: flex; justify-content: center; background-color: transparent;">
-                                                Trinetra
-                                            </span>
-                                        </p>
-                                        <div
-                                            style="display: flex; justify-content: center; background-color: transparent;">
-                                            <button>Details</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li> -->
+          <!-- Topics covered -->  
+          <div class="yt-topics">
+            <p class="yt-topics-title">What I cover on the channel</p>
+            <div class="yt-topics-grid">
+              <div class="yt-topic-chip">
+                <span>⚛️</span> React Native
+              </div>
+              <div class="yt-topic-chip">
+                <span>🐦</span> Flutter
+              </div>
+              <div class="yt-topic-chip">
+                <span>🔺</span> Angular
+              </div>
+              <div class="yt-topic-chip">
+                <span>🟢</span> Node.js
+              </div>
+              <div class="yt-topic-chip">
+                <span>🔥</span> Firebase
+              </div>
+              <div class="yt-topic-chip">
+                <span>🌐</span> Web Dev
+              </div>
+              <div class="yt-topic-chip">
+                <span>📱</span> Mobile Apps
+              </div>
+              <div class="yt-topic-chip">
+                <span>💡</span> Dev Tips
+              </div>
+            </div>
+          </div>
 
-                <!-- Pheronix -->
-                <li>
-                    <div class="card">
-                        <div class="content">
-                            <div class="back">
-                                <div class="back-content">
-                                    <div style="width: 200px; height: 125px;" class="card">
-                                        <div class="content">
-                                            <div class="back">
-                                                <div style="border-radius: 5px; width:98%; height:98%; overflow: hidden;"
-                                                    class="back-content">
-                                                    <img src="./assets/projects/pheronix.png" alt="Skill" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div style="background-color: transparent;">
-                                        <p
-                                            style="background-color: transparent; font-weight: bold; margin-bottom: 10px;">
-                                            <span
-                                                style="display: flex; justify-content: center; background-color: transparent;">
-                                                Pheronix
-                                            </span>One Super App
-                                        </p>
-                                        <div
-                                            style="display: flex; justify-content: center; background-color: transparent;">
-                                            <button>Details</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience" class="section">
+    <div class="section-inner">
+      <div class="section-header reveal fade-up">
+        <span class="section-tag">Work History</span>
+        <h2 class="section-title">Experience</h2>
+        <p class="section-subtitle">My professional journey in software development</p>
+      </div>
+
+      <div class="timeline">
+
+        <!-- Job 1 -->
+        <div class="timeline-item reveal fade-left">
+          <div class="timeline-connector">
+            <div class="timeline-node">
+              <svg viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/></svg>
+            </div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-card-header">
+              <div>
+                <h3 class="timeline-company">Keyideas Infotech Private Limited</h3>
+                <div class="timeline-meta">
+                  <span class="badge badge-done">Completed</span>
+                  <span class="badge badge-type">Full Time</span>
+                  <span class="timeline-date">Aug 2024 – Jan 2025</span>
+                </div>
+              </div>
+            </div>
+            <ul class="timeline-list">
+              <li>Completed a 6-month full-time role as a Software Engineer Trainee, developing plugin extensions for CMS-based platforms.</li>
+              <li>Identified and resolved <strong>30+ critical bugs</strong> across UI and backend workflows, reducing client-reported issues by 40%.</li>
+              <li>Participated in Agile sprints, stand-ups, and code reviews, contributing to <strong>3 successful product releases</strong>.</li>
             </ul>
+          </div>
         </div>
-    </div>
 
-    <!-- ABOUT -->
-    <div id="about" class="about" style="background-color: black;">
-        <div class="about-wrapper">
-            <!-- <div class="col">
-                <h2>Achievements</h2>
-                <p>
-                    I have had the privilege of working with a variety of technologies, including HTML, CSS, JavaScript,
-                    React.js, C++, and C. I have also dabbled in the world of C++ and C, and participated in numerous
-                    national and international hackathons to create cutting-edge
-                    solutions. These experiences have been instrumental in shaping my career and fostering my drive for
-                    continuous growth and innovation.
-                </p>
-            </div> -->
-
-            <!-- Achievement Section -->
-            <div class="skills col">
-                <h2>Achievements & Awards</h2>
-                <div class="ul-div">
-                    <h3 class="achievement-h3">International Level</h3>
-                    <ul>
-                        <li>🎖️ People’s Choice Award &
-                            Global Nominee – NASA Space Apps Challenge 2024 </li>
-                        <li>Top 5 – UNESCO
-                            India–Africa Hackathon 2022 </li>
-                        <li>🏆 Global Nominee – NASA
-                            Space Apps Challenge 2023</li>
-                    </ul>
-                </div>
-
-                <div class="ul-div">
-                    <h3 class="achievement-h3">National Level</h3>
-                    <ul>
-                        <li>🏆 Winner Smart India
-                            Hackathon - 2022</li>
-                        <li>🏆 Primathon by PRIMUS
-                            Techsystems Pvt. Ltd. - 2024</li>
-                        <li>🏆 Techkriti by IIT Kanpur
-                            - 2021</li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="achievement-h3">State Level</h3>
-                    <ul>
-                        <li>🏆 Innovation and
-                            Entrepreneurship (Jeopardy) – State Level – 2023</li>
-                        <li>🥇 Winner – Innovation and
-                            Entrepreneurship (Jeopardy) – Zonal Level – 2022</li>
-                        <li>🥈 Runner Up – Science
-                            Exhibition – Mandal Level – 2023</li>
-                        <li>🥈 Runner Up – Science
-                            Exhibition – Zonal Level – 2023</li>
-                        <li>🏆 Best Industry Oriented
-                            Project – College Level – 2024</li>
-                        <li>🌟 Stellar Award – College
-                            Level – 2023</li>
-                        <li>🥇 Winner – UHACK Hackathon
-                            – College Level – 2022</li>
-                    </ul>
-                </div>
+        <!-- Job 2 -->
+        <div class="timeline-item reveal fade-left delay-1">
+          <div class="timeline-connector">
+            <div class="timeline-node">
+              <svg viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/></svg>
             </div>
-
-            <!-- <div class="skills col">
-                <h2>My Skills</h2>
-                <ul>
-                    <li>HTML <img src="./assets/html-5.png" style="width: 1cm;height: 1cm;" /></li>
-                    <li>CSS <img src="./assets/css-3.png" style="width: 1cm;height: 1cm;" /></li>
-                    <li>JavaScript <img src="./assets/java-script.png" style="width: 1cm;height: 1cm;" /></li>
-                    <li>React <img src="./assets/physics.png" style="width: 1cm;height: 1cm;" /></li>
-                    <li>Tailwind <img src="./assets/Tailwind_CSS_Logo.svg.png" style="width: 1cm;height: 1cm;" /></li>
-                    <li>Mongo DB <img src="./assets/mongodb.png" style="width: 1cm;height: 1cm;" /></li>
-                    <li>Vercel &nbsp;<img src="./assets/logo-vercel.png" style="width: 1cm;height: 1cm;" /></li>
-                    <li>Python <img src="./assets/python.png" style="width: 1cm;height: 1cm;" /></li>
-                    <li>C++ <img src="./assets/c-.png" style="width: 1cm;height: 1cm;" /></li>
-                </ul>
-            </div> -->
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-card-header">
+              <div>
+                <h3 class="timeline-company">Shreeva Soft-Tech Innovations Pvt. Ltd.</h3>
+                <div class="timeline-meta">
+                  <span class="badge badge-done">Completed</span>
+                  <span class="badge badge-type">Full Time</span>
+                  <span class="timeline-date">Feb 2024 – Aug 2024</span>
+                </div>
+              </div>
+            </div>
+            <ul class="timeline-list">
+              <li>Worked for 6 months as a Full Stack Developer using <strong>Angular, Firebase, and Ionic</strong> to build mobile applications and websites. Developed a three-panel e-commerce system including a customer app, delivery agent app, and an admin dashboard.</li>
+              <li>Led a team of 8 individuals in delivering an attendance tracking system for an international client using Angular, Ionic, and Capacitor.</li>
+            </ul>
+          </div>
         </div>
-    </div>
 
-    <div class="footer-wrapper">
-        <p class="footer-p">2025 - Ambar Mishra. All rights reserved. - DebugWithToxic</p>
-    </div>
+        <!-- Job 3 -->
+        <div class="timeline-item reveal fade-left delay-2">
+          <div class="timeline-connector">
+            <div class="timeline-node">
+              <svg viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/></svg>
+            </div>
+          </div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-card-header">
+              <div>
+                <h3 class="timeline-company">Prayagraj Municipal Corporation</h3>
+                <div class="timeline-meta">
+                  <span class="badge badge-done">Completed</span>
+                  <span class="badge badge-intern">Internship</span>
+                  <span class="timeline-date">June 2023 – Aug 2023</span>
+                </div>
+              </div>
+            </div>
+            <ul class="timeline-list">
+              <li>Architected and deployed <strong>'Padho Prayagraj'</strong>, a full-stack digital library application using <strong>Flutter and Firebase</strong>.</li>
+              <li>Delivered a cross-platform solution adopted by <strong>5+ government schools</strong> within the first month of launch.</li>
+              <li>Built responsive UI with role-based access for students, trainers, and administrators.</li>
+            </ul>
+          </div>
+        </div>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section id="education" class="section section-alt">
+    <div class="section-inner">
+      <div class="section-header reveal fade-up">
+        <span class="section-tag">Academic Background</span>
+        <h2 class="section-title">Education</h2>
+        <p class="section-subtitle">My academic journey and qualifications</p>
+      </div>
+
+      <div class="edu-grid">
+        <div class="edu-card glass-card reveal fade-up">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-body">
+            <span class="edu-year">2025 – Present</span>
+            <h3 class="edu-school">Technische Universität Darmstadt</h3>
+            <p class="edu-location">Darmstadt, Germany</p>
+            <p class="edu-degree">Master of Science in Computer Science</p>
+            <span class="badge badge-type">In Progress</span>
+          </div>
+        </div>
+
+        <div class="edu-card glass-card reveal fade-up delay-1">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-body">
+            <span class="edu-year">2020 – 2024</span>
+            <h3 class="edu-school">Dr. A.P.J. Abdul Kalam Technical University</h3>
+            <p class="edu-location">Lucknow, India</p>
+            <p class="edu-degree">Bachelor of Technology in Computer Science and Engineering</p>
+            <span class="badge badge-done">Completed</span>
+          </div>
+        </div>
+
+        <div class="edu-card glass-card reveal fade-up delay-2">
+          <div class="edu-icon">🏫</div>
+          <div class="edu-body">
+            <span class="edu-year">2018 – 2020</span>
+            <h3 class="edu-school">Aatmdeep Vidyalaya</h3>
+            <p class="edu-location">India</p>
+            <p class="edu-degree">Senior Secondary School</p>
+            <span class="badge badge-done">Completed</span>
+          </div>
+        </div>
+
+        <div class="edu-card glass-card reveal fade-up delay-3">
+          <div class="edu-icon">📚</div>
+          <div class="edu-body">
+            <span class="edu-year">2016 – 2018</span>
+            <h3 class="edu-school">Central Hindu School</h3>
+            <p class="edu-location">India</p>
+            <p class="edu-degree">Secondary School</p>
+            <span class="badge badge-done">Completed</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section">
+    <div class="section-inner">
+      <div class="section-header reveal fade-up">
+        <span class="section-tag">Technical Arsenal</span>
+        <h2 class="section-title">Skills</h2>
+        <p class="section-subtitle">Technologies and tools I work with</p>
+      </div>
+
+      <!-- Frontend Languages -->
+      <div class="skills-group reveal fade-up delay-1">
+        <h3 class="skills-group-title">Frontend Languages</h3>
+        <div class="skills-grid">
+          <div class="skill-badge">
+            <div class="skill-icon"><img src="./assets/skills/Frontend/html.png" alt="HTML" /></div>
+            <span>HTML</span>
+          </div>
+          <div class="skill-badge">
+            <div class="skill-icon"><img src="./assets/skills/Frontend/css.png" alt="CSS" /></div>
+            <span>CSS</span>
+          </div>
+          <div class="skill-badge">
+            <div class="skill-icon"><img src="./assets/skills/Frontend/js.png" alt="JavaScript" /></div>
+            <span>JavaScript</span>
+          </div>
+          <div class="skill-badge">
+            <div class="skill-icon"><img src="./assets/skills/Frontend/typescript.png" alt="TypeScript" /></div>
+            <span>TypeScript</span>
+          </div>
+          <div class="skill-badge">
+            <div class="skill-icon"><img src="./assets/skills/Frontend/jquery.png" alt="jQuery" /></div>
+            <span>jQuery</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Frontend Frameworks -->
+      <div class="skills-group reveal fade-up delay-2">
+        <h3 class="skills-group-title">Frontend Frameworks & Libraries</h3>
+        <div class="skills-grid">
+          <div class="skill-badge">
+            <div class="skill-icon"><img src="./assets/skills/Frontend/angular.png" alt="Angular" /></div>
+            <span>Angular</span>
+          </div>
+          <div class="skill-badge">
+            <div class="skill-icon"><img src="./assets/skills/Frontend/react.png" alt="React" /></div>
+            <span>React JS</span>
+          </div>
+          <div class="skill-badge">
+            <div class="skill-icon"><img src="./assets/skills/Frontend/nextjs.png" alt="Next.js" /></div>
+            <span>Next JS</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile -->
+      <div class="skills-group reveal fade-up delay-3">
+        <h3 class="skills-group-title">Mobile Development</h3>
+        <div class="skills-grid">
+          <div class="skill-badge">
+            <div class="skill-icon"><img src="./assets/skills/Mobile/flutter.png" alt="Flutter" /></div>
+            <span>Flutter</span>
+          </div>
+          <div class="skill-badge">
+            <div class="skill-icon"><img src="./assets/skills/Mobile/react.png" alt="React Native" /></div>
+            <span>React Native</span>
+          </div>
+          <div class="skill-badge">
+            <div class="skill-icon"><img src="./assets/skills/Mobile/ionic.png" alt="Ionic" /></div>
+            <span>Ionic</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- DevOps -->
+      <div class="skills-group reveal fade-up delay-1">
+        <h3 class="skills-group-title">DevOps & Tools</h3>
+        <div class="skills-grid">
+          <div class="skill-badge">
+            <div class="skill-icon"><img src="./assets/skills/Devops/docker.png" alt="Docker" /></div>
+            <span>Docker</span>
+          </div>
+          <div class="skill-badge">
+            <div class="skill-icon"><img src="./assets/skills/Devops/postman.png" alt="Postman" /></div>
+            <span>Postman</span>
+          </div>
+          <div class="skill-badge">
+            <div class="skill-icon"><img src="./assets/skills/Devops/github.png" alt="GitHub" /></div>
+            <span>GitHub</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Backend -->
+      <div class="skills-group reveal fade-up delay-2">
+        <h3 class="skills-group-title">Backend</h3>
+        <div class="skills-grid">
+          <div class="skill-badge">
+            <div class="skill-icon"><img src="./assets/skills/Backend/php.png" alt="PHP" /></div>
+            <span>PHP</span>
+          </div>
+          <div class="skill-badge">
+            <div class="skill-icon"><img src="./assets/skills/Backend/c-.png" alt="C++" /></div>
+            <span>C++</span>
+          </div>
+          <div class="skill-badge">
+            <div class="skill-icon"><img src="./assets/skills/Backend/firebase.png" alt="Firebase" /></div>
+            <span>Firebase</span>
+          </div>
+          <div class="skill-badge">
+            <div class="skill-icon"><img src="./assets/skills/Backend/node.png" alt="Node.js" /></div>
+            <span>Node JS</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Databases -->
+      <div class="skills-group reveal fade-up delay-3">
+        <h3 class="skills-group-title">Databases</h3>
+        <div class="skills-grid">
+          <div class="skill-badge">
+            <div class="skill-icon"><img src="./assets/skills/Database/mongo.png" alt="MongoDB" /></div>
+            <span>MongoDB</span>
+          </div>
+          <div class="skill-badge">
+            <div class="skill-icon"><img src="./assets/skills/Database/mysql.png" alt="MySQL" /></div>
+            <span>MySQL</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Collaboration -->
+      <div class="skills-group reveal fade-up delay-1">
+        <h3 class="skills-group-title">Collaboration & Design</h3>
+        <div class="skills-grid">
+          <div class="skill-badge">
+            <div class="skill-icon"><img src="./assets/skills/collaboration/jira.png" alt="Jira" /></div>
+            <span>Jira</span>
+          </div>
+          <div class="skill-badge">
+            <div class="skill-icon"><img src="./assets/skills/collaboration/slack.png" alt="Slack" /></div>
+            <span>Slack</span>
+          </div>
+          <div class="skill-badge">
+            <div class="skill-icon"><img src="./assets/skills/collaboration/skype.png" alt="Skype" /></div>
+            <span>Skype</span>
+          </div>
+          <div class="skill-badge">
+            <div class="skill-icon"><img src="./assets/skills/collaboration/notion.png" alt="Notion" /></div>
+            <span>Notion</span>
+          </div>
+          <div class="skill-badge">
+            <div class="skill-icon"><img src="./assets/skills/collaboration/figma.png" alt="Figma" /></div>
+            <span>Figma</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section section-alt">
+    <div class="section-inner">
+      <div class="section-header reveal fade-up">
+        <span class="section-tag">My Work</span>
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">Things I've built with passion</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Pace Scholar -->
+        <div class="project-card glass-card reveal fade-up delay-1">
+          <div class="project-image">
+            <img src="./assets/projects/pace_scholar.png" alt="Pace Scholar" />
+            <div class="project-overlay">
+              <a href="#" class="btn-project">View Details</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Pace Scholar</h3>
+            <p class="project-desc">An educational platform designed to accelerate learning with structured curriculum and progress tracking.</p>
+            <div class="project-tags">
+              <span class="project-tag">React Native</span>
+              <span class="project-tag">Firebase</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Aqua Learner -->
+        <div class="project-card glass-card reveal fade-up delay-2">
+          <div class="project-image">
+            <img src="./assets/projects/aqua_learner.png" alt="Aqua Learner" />
+            <div class="project-overlay">
+              <a href="#" class="btn-project">View Details</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Aqua Learner</h3>
+            <p class="project-desc">An interactive mobile learning app with gamified water-themed educational content.</p>
+            <div class="project-tags">
+              <span class="project-tag">Flutter</span>
+              <span class="project-tag">Firebase</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- TriNetra -->
+        <div class="project-card glass-card reveal fade-up delay-3">
+          <div class="project-image">
+            <img src="./assets/trinetra.jpg" alt="TriNetra" />
+            <div class="project-overlay">
+              <a href="https://github.com/Toxic-Kratos/TRINETRA" target="_blank" class="btn-project">View on GitHub</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">TriNetra</h3>
+            <p class="project-desc">A hackathon project — a smart surveillance and alert system with real-time threat detection.</p>
+            <div class="project-tags">
+              <span class="project-tag">IoT</span>
+              <span class="project-tag">AI/ML</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sone Ka Tinka -->
+        <div class="project-card glass-card reveal fade-up delay-1">
+          <div class="project-image">
+            <img src="./assets/sonekatinka.jpg" alt="Sone Ka Tinka" />
+            <div class="project-overlay">
+              <a href="https://drive.google.com/file/d/1Db8qvVEp9T8F6XlLhKKCrgaRbI0YHFYb/view?usp=drivesdk" target="_blank" class="btn-project">Watch Demo</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Sone Ka Tinka</h3>
+            <p class="project-desc">A social initiative app connecting people for collaborative community building and resource sharing.</p>
+            <div class="project-tags">
+              <span class="project-tag">Angular</span>
+              <span class="project-tag">Ionic</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pikachu -->
+        <div class="project-card glass-card reveal fade-up delay-2">
+          <div class="project-image">
+            <img src="./assets/pikachu.jpg" alt="Pikachu" />
+            <div class="project-overlay">
+              <a href="https://drive.google.com/file/d/1Ba7aFOKGE-y9jsJ088x8UH1CDcazQA1q/view?usp=drivesdk" target="_blank" class="btn-project">Watch Demo</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Pikachu</h3>
+            <p class="project-desc">A fun, interactive cross-platform game built with a mobile-first approach and engaging animations.</p>
+            <div class="project-tags">
+              <span class="project-tag">Flutter</span>
+              <span class="project-tag">Dart</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section">
+    <div class="section-inner">
+      <div class="section-header reveal fade-up">
+        <span class="section-tag">Let's Connect</span>
+        <h2 class="section-title">Contact Me</h2>
+        <p class="section-subtitle">Open to opportunities, collaborations, and hackathons</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal fade-left delay-1">
+          <div class="contact-item glass-card">
+            <div class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M21 8C22.1046 8 23 8.89543 23 10V14C23 15.1046 22.1046 16 21 16H19.9381C19.446 19.9463 16.0796 23 12 23V21C15.3137 21 18 18.3137 18 15V9C18 5.68629 15.3137 3 12 3C8.68629 3 6 5.68629 6 9V16H3C1.89543 16 1 15.1046 1 14V10C1 8.89543 1.89543 8 3 8H4.06189C4.55399 4.05369 7.92038 1 12 1C16.0796 1 19.446 4.05369 19.9381 8H21ZM7.75944 15.7849L8.81958 14.0887C9.74161 14.6662 10.8318 15 12 15C13.1682 15 14.2584 14.6662 15.1804 14.0887L16.2406 15.7849C15.0112 16.5549 13.5576 17 12 17C10.4424 17 8.98882 16.5549 7.75944 15.7849Z"/></svg>
+            </div>
+            <div>
+              <p class="contact-label">Phone</p>
+              <p class="contact-value">+91 7007720839</p>
+            </div>
+          </div>
+
+          <div class="contact-item glass-card">
+            <div class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M21 3C21.5523 3 22 3.44772 22 4V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V19H20V7.3L12 14.5L2 5.5V4C2 3.44772 2.44772 3 3 3H21ZM8 15V17H0V15H8ZM5 10V12H0V10H5ZM19.5659 5H4.43414L12 11.8093L19.5659 5Z"/></svg>
+            </div>
+            <div>
+              <p class="contact-label">Email</p>
+              <p class="contact-value">ambarmishra740@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="contact-item glass-card">
+            <div class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 20.8995L16.9497 15.9497C19.6834 13.2161 19.6834 8.78392 16.9497 6.05025C14.2161 3.31658 9.78392 3.31658 7.05025 6.05025C4.31658 8.78392 4.31658 13.2161 7.05025 15.9497L12 20.8995ZM12 23.7279L5.63604 17.364C2.12132 13.8492 2.12132 8.15076 5.63604 4.63604C9.15076 1.12132 14.8492 1.12132 18.364 4.63604C21.8787 8.15076 21.8787 13.8492 18.364 17.364L12 23.7279ZM12 13C13.1046 13 14 12.1046 14 11C14 9.89543 13.1046 9 12 9C10.8954 9 10 9.89543 10 11C10 12.1046 10.8954 13 12 13ZM12 15C9.79086 15 8 13.2091 8 11C8 8.79086 9.79086 7 12 7C14.2091 7 16 8.79086 16 11C16 13.2091 14.2091 15 12 15Z"/></svg>
+            </div>
+            <div>
+              <p class="contact-label">Location</p>
+              <p class="contact-value">Gorakhpur, India</p>
+            </div>
+          </div>
+
+          <div class="contact-socials">
+            <a href="https://github.com/ambarmishraa" target="_blank" class="social-icon" aria-label="GitHub">
+              <svg viewBox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/er-ambar-mishra-5940922b4/" target="_blank" class="social-icon" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M18.3362 18.339H15.6707V14.1622C15.6707 13.1662 15.6505 11.8845 14.2817 11.8845C12.892 11.8845 12.6797 12.9683 12.6797 14.0887V18.339H10.0142V9.75H12.5747V10.9207H12.6092C12.967 10.2457 13.837 9.53325 15.1367 9.53325C17.8375 9.53325 18.337 11.3108 18.337 13.6245V18.339H18.3362ZM7.00373 8.57475C6.14573 8.57475 5.45648 7.88025 5.45648 7.026C5.45648 6.1725 6.14648 5.47875 7.00373 5.47875C7.85873 5.47875 8.55173 6.1725 8.55173 7.026C8.55173 7.88025 7.85798 8.57475 7.00373 8.57475ZM8.34023 18.339H5.66723V9.75H8.34023V18.339ZM19.6697 3H4.32923C3.59498 3 3.00098 3.5805 3.00098 4.29675V19.7033C3.00098 20.4202 3.59498 21 4.32923 21H19.6675C20.401 21 21.001 20.4202 21.001 19.7033V4.29675C21.001 3.5805 20.401 3 19.6675 3H19.6697Z"/></svg>
+            </a>
+            <a href="https://www.youtube.com/@DebugWithToxic" target="_blank" class="social-icon" aria-label="YouTube">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.2439 4C12.778 4.00294 14.1143 4.01586 15.5341 4.07273L16.0375 4.09468C17.467 4.16236 18.8953 4.27798 19.6037 4.4755C20.5486 4.74095 21.2913 5.5155 21.5423 6.49732C21.942 8.05641 21.992 11.0994 21.9982 11.8358L21.9991 11.9884L21.9991 11.9991C21.9991 11.9991 21.9991 12.0028 21.9991 12.0099L21.9982 12.1625C21.992 12.8989 21.942 15.9419 21.5423 17.501C21.2878 18.4864 20.5451 19.261 19.6037 19.5228C18.8953 19.7203 17.467 19.8359 16.0375 19.9036L15.5341 19.9255C14.1143 19.9824 12.778 19.9953 12.2439 19.9983L12.0095 19.9991L11.9991 19.9991C11.9991 19.9991 11.9956 19.9991 11.9887 19.9991L11.7545 19.9983C10.6241 19.9921 5.89772 19.941 4.39451 19.5228C3.4496 19.2573 2.70692 18.4828 2.45587 17.501C2.0562 15.9419 2.00624 12.8989 2 12.1625V11.8358C2.00624 11.0994 2.0562 8.05641 2.45587 6.49732C2.7104 5.51186 3.45308 4.73732 4.39451 4.4755C5.89772 4.05723 10.6241 4.00622 11.7545 4H12.2439ZM9.99911 8.49914V15.4991L15.9991 11.9991L9.99911 8.49914Z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/ambar_mishra__/" target="_blank" class="social-icon" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-card glass-card reveal fade-right delay-2">
+          <div class="contact-card-top">
+            <div class="contact-avatar-wrapper">
+              <img src="./assets/Profile_Photo.png" alt="Ambar Mishra" class="contact-avatar" />
+            </div>
+            <div>
+              <h3 class="contact-name">Ambar Mishra</h3>
+              <p class="contact-role">Software Developer</p>
+            </div>
+          </div>
+          <p class="contact-bio">
+            Software Developer with a strong passion for promoting education through social media,
+            and a keen interest in hackathons and collaborating with diverse teams.
+          </p>
+          <a href="https://drive.google.com/file/d/13btn58yWUS6-7P_vyAo1Rf0s41g9SRVr/view?usp=sharing" target="_blank" class="btn-primary btn-full">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Resume
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-copy">© 2025 Ambar Mishra. Built with passion.</p>
+      <a href="#hero" class="footer-top" aria-label="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
 </body>
 
 </html>

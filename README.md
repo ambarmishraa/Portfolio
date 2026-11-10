@@ -1,6 +1,6 @@
 # Ambar Mishra — Portfolio
 
-A minimalist, monochrome personal portfolio showcasing my work as a Software Developer. Built with pure HTML, CSS, and JavaScript — no frameworks, no dependencies.
+A minimalist, monochrome personal portfolio showcasing my background as an M.Sc. Computer Science student and developer. Built with pure HTML, CSS, and JavaScript — no frameworks, no dependencies.
 
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
@@ -12,7 +12,7 @@ A minimalist, monochrome personal portfolio showcasing my work as a Software Dev
 
 - **Split Hero Design** — Bold 50/50 black-and-white landing with a scrolling marquee and `mix-blend-mode` typography
 - **Monochrome Theme** — Stark black, white, and gray palette across all sections
-- **YouTube Integration** — Dedicated channel promotion section with embedded video and red-accent branding
+- **YouTube Integration** — Vlog channel section with embedded latest uploads and red-accent branding
 - **Scroll Reveal Animations** — Elements fade in as you scroll using `IntersectionObserver`
 - **Responsive** — Fully responsive layout with a mobile hamburger menu
 - **No Dependencies** — Zero external libraries; pure vanilla HTML/CSS/JS
@@ -83,10 +83,10 @@ portfolio/
 |---|---|---|
 | 1 | **Hero** | Split-screen design with scrolling "SOFTWARE DEVELOPER" marquee |
 | 2 | **YouTube** | Channel card, embedded video, topic chips, subscribe CTA |
-| 3 | **Experience** | Timeline layout with 3 professional roles |
-| 4 | **Education** | Cards for TU Darmstadt (M.Sc.), AKTU (B.Tech), and schools |
+| 3 | **Experience** | Timeline layout with professional roles |
+| 4 | **Education** | Cards for TU Darmstadt (M.Sc.), AKTU (B.Tech), and school |
 | 5 | **Skills** | Grouped badges — Frontend, Backend, Mobile, DevOps, etc. |
-| 6 | **Projects** | Grid of project cards with hover overlays |
+| 6 | **Photography** | Link to my photography portfolio site built with Next.js |
 | 7 | **Contact** | Phone, email, location + social links + download CV |
 
 ---
@@ -94,9 +94,10 @@ portfolio/
 ## 🔗 Links
 
 - **Live Site**: [ambarmishra.vercel.app](https://ambarmishra.vercel.app/)
-- **YouTube**: [@CodeWithAmbar](https://www.youtube.com/@CodeWithAmbar)
+- **Photography**: [ambarphotography.vercel.app](https://ambarphotography.vercel.app/)
+- **YouTube**: [@ambarmishravlogs](https://www.youtube.com/@ambarmishravlogs)
 - **GitHub**: [ambarmishraa](https://github.com/ambarmishraa)
-- **LinkedIn**: [er-ambar-mishra](https://www.linkedin.com/in/er-ambar-mishra-5940922b4/)
+- **LinkedIn**: [ambar-mishra](https://www.linkedin.com/in/ambar-mishra)
 
 ---
 
@@ -107,3 +108,5 @@ This project is open source and available under the [MIT License](LICENSE).
 ---
 
 > Built with ☕ and passion by **Ambar Mishra**
+
+> Note: the Projects section is commented out in `index.html` and can be re-enabled per job application.

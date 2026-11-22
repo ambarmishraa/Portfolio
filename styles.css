@@ -32,7 +32,7 @@
 
   --text-primary: #ffffff;
   --text-secondary: #a1a1aa;
-  --text-muted: #52525b;
+  --text-muted: #8a8a93; /* 5:1+ contrast on the darkest card background (WCAG AA) */
 
   --border: rgba(255, 255, 255, 0.08);
   --border-hover: rgba(255, 255, 255, 0.2);
@@ -1272,7 +1272,7 @@ ul { list-style: none; }
   justify-content: center;
   gap: 0.6rem;
   padding: 0.8rem 1.75rem;
-  background: #ff0000;
+  background: #e00000; /* slightly deeper than #ff0000 so white text passes WCAG AA */
   color: #ffffff;
   font-weight: 700;
   font-size: 0.9rem;
@@ -1285,7 +1285,7 @@ ul { list-style: none; }
 }
 
 .btn-yt-subscribe:hover {
-  background: #cc0000;
+  background: #b80000;
   transform: translateY(-2px);
   box-shadow: 0 8px 28px rgba(255, 0, 0, 0.5);
 }

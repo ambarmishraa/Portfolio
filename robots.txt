@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ambarmishra.vercel.app/sitemap.xml

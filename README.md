@@ -31,6 +31,9 @@ portfolio/
 ├── script.js           # Header, scroll reveal, mobile menu, YouTube click-to-load
 ├── README.md
 ├── LICENSE
+├── 404.html          # Custom "page not found" (served automatically by Vercel)
+├── robots.txt
+├── sitemap.xml
 └── assets/
     ├── fonts/          # Self-hosted Inter & Space Grotesk (OFL)
     ├── img/            # Profile photo, project images, favicon, og-image (WebP/JPG)
@@ -54,15 +57,14 @@ portfolio/
    cd portfolio
    ```
 
-2. **Open in browser**
+2. **Run it locally**
    ```bash
-   # Simply open index.html in any modern browser
-   open index.html        # macOS
-   start index.html       # Windows
-   xdg-open index.html    # Linux
+   python -m http.server 8000
    ```
+   Then open [http://localhost:8000](http://localhost:8000).
 
-   No build step, no `npm install` — it just works.
+   No build step, no `npm install`. Use a local server rather than double-clicking `index.html`:
+   browsers block the self-hosted fonts on `file://` pages. (`npx serve` works too.)
 
 ---
 

@@ -108,3 +108,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     btn.replaceWith(iframe);
   });
 })();
+
+
+/* ---- 7. FOOTER YEAR ---- */
+(function setYear() {
+  const el = document.getElementById('year');
+  if (el) el.textContent = new Date().getFullYear();
+})();

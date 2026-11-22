@@ -2,10 +2,7 @@
    script.js — Portfolio Interactions
    ============================================= */
 
-/* Old animations removed for split hero design */
-
-
-/* ---- 3. HEADER SCROLL EFFECT ---- */
+/* ---- 1. HEADER SCROLL EFFECT ---- */
 (function initHeader() {
   const header = document.getElementById('header');
   if (!header) return;
@@ -16,7 +13,7 @@
 })();
 
 
-/* ---- 4. SCROLL REVEAL ---- */
+/* ---- 2. SCROLL REVEAL ---- */
 (function initScrollReveal() {
   const els = document.querySelectorAll('.reveal');
   if (!els.length) return;
@@ -36,7 +33,7 @@
 })();
 
 
-/* ---- 5. ACTIVE NAV LINK ON SCROLL ---- */
+/* ---- 3. ACTIVE NAV LINK ON SCROLL ---- */
 (function initActiveNav() {
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-link');
@@ -59,29 +56,55 @@
 })();
 
 
-/* ---- 6. HAMBURGER MOBILE MENU ---- */
+/* ---- 4. HAMBURGER MOBILE MENU ---- */
 (function initHamburger() {
   const btn = document.getElementById('hamburger');
   const nav = document.getElementById('mobile-nav');
   if (!btn || !nav) return;
 
-  btn.addEventListener('click', () => {
-    nav.classList.toggle('open');
-  });
+  const setOpen = open => {
+    nav.classList.toggle('open', open);
+    btn.setAttribute('aria-expanded', String(open));
+    btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  };
+
+  btn.addEventListener('click', () => setOpen(!nav.classList.contains('open')));
 
   nav.querySelectorAll('.mobile-nav-link').forEach(link => {
-    link.addEventListener('click', () => nav.classList.remove('open'));
+    link.addEventListener('click', () => setOpen(false));
+  });
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') setOpen(false);
   });
 })();
 
 
-/* ---- 7. SMOOTH SCROLL FOR ANCHOR LINKS ---- */
+/* ---- 5. SMOOTH SCROLL FOR ANCHOR LINKS ---- */
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     const target = document.querySelector(this.getAttribute('href'));
     if (target) {
       e.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      target.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
     }
   });
 });
+
+
+/* ---- 6. YOUTUBE CLICK-TO-LOAD (GDPR) ---- */
+(function initYouTubeConsent() {
+  const btn = document.getElementById('yt-consent');
+  if (!btn) return;
+
+  btn.addEventListener('click', () => {
+    const iframe = document.createElement('iframe');
+    iframe.src = btn.dataset.src;
+    iframe.title = 'Ambar Mishra Vlogs: latest videos';
+    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    iframe.allowFullscreen = true;
+    iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+    btn.replaceWith(iframe);
+  });
+})();

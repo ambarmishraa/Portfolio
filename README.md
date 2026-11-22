@@ -12,10 +12,13 @@ A minimalist, monochrome personal portfolio showcasing my background as an M.Sc.
 
 - **Split Hero Design** — Bold 50/50 black-and-white landing with a scrolling marquee and `mix-blend-mode` typography
 - **Monochrome Theme** — Stark black, white, and gray palette across all sections
-- **YouTube Integration** — Vlog channel section with embedded latest uploads and red-accent branding
+- **YouTube Integration** — Vlog channel section with a click-to-load player (nothing is loaded from YouTube until the visitor clicks)
+- **Privacy-friendly** — Self-hosted fonts, no trackers, no third-party requests on page load
+- **Accessible** — Semantic headings, keyboard-friendly menu, respects `prefers-reduced-motion`
 - **Scroll Reveal Animations** — Elements fade in as you scroll using `IntersectionObserver`
 - **Responsive** — Fully responsive layout with a mobile hamburger menu
 - **No Dependencies** — Zero external libraries; pure vanilla HTML/CSS/JS
+- **Lightweight** — Images served as optimised WebP (whole `assets/` folder ≈ 1.2 MB)
 
 ---
 
@@ -25,15 +28,14 @@ A minimalist, monochrome personal portfolio showcasing my background as an M.Sc.
 portfolio/
 ├── index.html          # Main HTML file
 ├── styles.css          # Complete stylesheet (monochrome + YouTube red)
-├── script.js           # Scroll reveal, header effects, mobile menu
+├── script.js           # Header, scroll reveal, mobile menu, YouTube click-to-load
 ├── README.md
+├── LICENSE
 └── assets/
-    ├── Profile_Photo.png
-    ├── projects/
-    │   ├── pace_scholar.png
-    │   ├── aqua_learner.png
-    │   └── ...
+    ├── fonts/          # Self-hosted Inter & Space Grotesk (OFL)
+    ├── img/            # Profile photo, project images, favicon, og-image (WebP/JPG)
     └── skills/
+        ├── Data/
         ├── Frontend/
         ├── Backend/
         ├── Mobile/
@@ -71,7 +73,7 @@ portfolio/
 | Background | `#000000` (pure black) |
 | Text | `#ffffff` / `#a1a1aa` / `#52525b` |
 | YouTube Accent | `#ff0000` / `#ff4444` |
-| Fonts | [Inter](https://fonts.google.com/specimen/Inter), [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk) |
+| Fonts | [Inter](https://fonts.google.com/specimen/Inter), [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk) (self-hosted) |
 | Cards | Glassmorphism with subtle white borders |
 | Hero | Split black/white with outline-stroke marquee text |
 
@@ -81,13 +83,14 @@ portfolio/
 
 | # | Section | Description |
 |---|---|---|
-| 1 | **Hero** | Split-screen design with scrolling "SOFTWARE DEVELOPER" marquee |
-| 2 | **YouTube** | Channel card, embedded video, topic chips, subscribe CTA |
-| 3 | **Experience** | Timeline layout with professional roles |
-| 4 | **Education** | Cards for TU Darmstadt (M.Sc.), AKTU (B.Tech), and school |
-| 5 | **Skills** | Grouped badges — Frontend, Backend, Mobile, DevOps, etc. |
-| 6 | **Photography** | Link to my photography portfolio site built with Next.js |
-| 7 | **Contact** | Phone, email, location + social links + download CV |
+| 1 | **Hero** | Split-screen design with scrolling "DATA & SOFTWARE" marquee |
+| 2 | **Experience** | Timeline layout with professional roles |
+| 3 | **Projects** | Project cards with GitHub / demo links |
+| 4 | **Skills** | Grouped badges — Programming & Data, Frontend, Backend, Mobile, DevOps, etc. |
+| 5 | **Education** | Cards for TU Darmstadt (M.Sc.) and AKTU (B.Tech) |
+| 6 | **YouTube** | Channel card, click-to-load video, topic chips, subscribe CTA |
+| 7 | **Photography** | Link to my photography portfolio site built with Next.js |
+| 8 | **Contact** | Phone, email, location + social links + download CV |
 
 ---
 
@@ -108,5 +111,3 @@ This project is open source and available under the [MIT License](LICENSE).
 ---
 
 > Built with ☕ and passion by **Ambar Mishra**
-
-> Note: the Projects section is commented out in `index.html` and can be re-enabled per job application.

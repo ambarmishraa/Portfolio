@@ -1,4 +1,22 @@
 /* =============================================
+   FONTS (self-hosted: no requests to Google, GDPR-friendly)
+   ============================================= */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('./assets/fonts/inter.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url('./assets/fonts/space-grotesk.woff2') format('woff2');
+}
+
+/* =============================================
    DESIGN TOKENS
    ============================================= */
 :root {
@@ -353,18 +371,29 @@ ul { list-style: none; }
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 8rem 2.5rem 2.5rem 2.5rem;
+  --hero-pad: 2.5rem;
+  padding: 8rem var(--hero-pad) var(--hero-pad) var(--hero-pad);
   pointer-events: none;
+}
+
+/* Two-tone text: black over the white half, white over the black half.
+   (mix-blend-mode can't work here because the overlay's z-index isolates it.) */
+.hero-two-tone {
+  background: linear-gradient(90deg,
+    #000 0, #000 calc(50vw - var(--hero-pad)),
+    #fff calc(50vw - var(--hero-pad)), #fff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  mix-blend-mode: normal;
 }
 .hero-title-top {
   margin-top: 2rem;
 }
-.hero-title-top h2 {
+.hero-title-top h1 {
   font-family: 'Georgia', serif;
   font-size: clamp(3rem, 5vw, 5rem);
   font-weight: 700;
-  mix-blend-mode: difference;
-  color: #ffffff;
 }
 
 .hero-bottom-row {
@@ -1034,6 +1063,9 @@ ul { list-style: none; }
   font-weight: 500;
 }
 
+.contact-value a { transition: var(--transition); }
+.contact-value a:hover { color: var(--text-secondary); text-decoration: underline; }
+
 .contact-socials {
   display: flex;
   gap: 0.75rem;
@@ -1301,6 +1333,40 @@ ul { list-style: none; }
   border-radius: var(--radius-sm);
 }
 
+/* Click-to-load YouTube placeholder */
+.yt-consent {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 1.5rem;
+  background: radial-gradient(circle at center, rgba(255, 68, 68, 0.12), #000 70%);
+  border: none;
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  text-align: center;
+  cursor: pointer;
+}
+.yt-consent-play {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #ff0000;
+  transition: var(--transition);
+}
+.yt-consent:hover .yt-consent-play,
+.yt-consent:focus-visible .yt-consent-play { transform: scale(1.08); background: #ff4444; }
+.yt-consent-title { font-weight: 600; font-size: 1rem; }
+.yt-consent-note { font-size: 0.75rem; color: var(--text-secondary); max-width: 320px; }
+
 .yt-topics {
   padding: 0;
 }
@@ -1358,7 +1424,11 @@ ul { list-style: none; }
   .hero-bottom-row { flex-direction: column; align-items: flex-start; gap: 2rem; }
   .hero-stats-box { text-align: left; }
   .hero-stars { justify-content: flex-start; }
-  .hero-overlay { padding-top: 6rem; padding-left: 1.25rem; padding-right: 1.25rem; }
+  .hero-overlay { --hero-pad: 1.25rem; padding-top: 6rem; }
+  .hero-years { background: linear-gradient(90deg, #000 0, #000 calc(50vw - var(--hero-pad)), #fff calc(50vw - var(--hero-pad)), #fff 100%);
+    -webkit-background-clip: text; background-clip: text; color: transparent; mix-blend-mode: normal; }
+  .hero-quote-box { max-width: none; background: rgba(255,255,255,0.92); padding: 0.85rem 1rem; border-radius: var(--radius-sm); }
+  .hero-quote-text { margin-top: 0; }
   .hero-marquee-text { font-size: 25vw; }
   .timeline-item { grid-template-columns: 36px 1fr; gap: 1rem; }
   .timeline-node { width: 36px; height: 36px; }
@@ -1366,4 +1436,16 @@ ul { list-style: none; }
   .edu-grid { grid-template-columns: 1fr; }
   .section-header { margin-bottom: 2.5rem; }
   .footer-inner { flex-direction: column; gap: 1rem; text-align: center; }
+}
+
+/* Respect users who turn off animations in their OS settings */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .hero-marquee-content { animation: none; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal { opacity: 1 !important; transform: none !important; }
 }
